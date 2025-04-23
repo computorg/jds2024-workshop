@@ -1,6 +1,8 @@
 project: 
   type: website
+  pre-render: quarto render --profile slides
 
+logo: img/
 website:
   title: "Computo workshop"
   navbar:
@@ -9,6 +11,9 @@ website:
         text: Site
       - href: _slides/index.html
         text: Slides
+    right: 
+      - icon: github
+        href: https://github.com/computorg/jds2024-workshop-template
 
 format:
   html:

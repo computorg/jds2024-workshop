@@ -1,5 +1,5 @@
 profile:
-  default: slides
+  default: website
 
 bibliography: references.bib
 csl: journal-of-open-research-software.csl
@@ -8,7 +8,7 @@ title: "Workshop on Reproducible Research"
 subtitle: "A hands-on introduction to quarto with a Computo submission"
 date: "2024-05-31"
 
-footer: <https://computo.sfds.asso.fr>
+footer: JDS 2024 <https://computo.sfds.asso.fr>
 logo: img/logo_text_vertical.svg
 date-format: long
 lang: en

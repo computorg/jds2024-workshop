@@ -1,0 +1,24 @@
+article* : {
+    shape: package
+    style: {
+        fill: lightblue
+    }
+}
+
+template.workflow -> article*.workflow : copy {
+    style: {
+        stroke: red
+        stroke-width: 2
+        font-size: 30
+        font-color: red
+    }
+}
+
+template -> article* : clone {
+    style: {
+        stroke: orange
+        stroke-width: 2
+        font-size: 30
+        font-color: orange
+    }
+}

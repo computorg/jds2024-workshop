@@ -2,7 +2,7 @@ project:
   type: website
   render: 
     - index.qmd
-  # post-render: rm -rf docs-resources/Slides/docs docs-resources/Slides/docs-resources
+    - github-workflows.qmd
   output-dir: _slides
   resources:
     - "figures/*.svg"

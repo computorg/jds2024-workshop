@@ -818,21 +818,16 @@ https://github.com/computorg/template-jds2024
 3. Select Create a new repository.
 4. Select `Include all branches`.
 
-## Language version
+## Cloning the repository
 
 Make a `git clone` of the repository you just templated and open it in your favorite IDE.
 
-:::{ layout-ncol="2"}
+## Edit the quarto document
 
-### Python version
+Open `published-paper-tsne.qmd` in your favorite text editor.
 
-Rename the `published-paper-tsne-python.qmd` to `published-paper-tsne.qmd`
+Find the code cells and modify them in order to have the plots.
 
-### R version
-
-Rename the `published-paper-tsne-R.qmd` to `published-paper-tsne.qmd`
-
-:::
-
-
+Look at the scripts in the `scripts` directory for the plotting code
+    
 # Conclusion

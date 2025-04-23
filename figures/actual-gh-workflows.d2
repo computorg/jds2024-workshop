@@ -1,0 +1,34 @@
+direction: down
+
+...@base-gh-workflows
+
+article1 : "Article 1"
+article2 : "Article 2"
+article3 : "Article 3"
+article4 : "Article 4"
+article5 : "Article 5"
+
+article* : {
+    shape: package
+    style: {
+        fill: lightblue
+    }
+}
+
+template.workflow -> article*.workflow : copy {
+    style: {
+        stroke: red
+        stroke-width: 2
+        font-size: 30
+        font-color: red
+    }
+}
+
+template -> article* : clone {
+    style: {
+        stroke: orange
+        stroke-width: 2
+        font-size: 30
+        font-color: orange
+    }
+}

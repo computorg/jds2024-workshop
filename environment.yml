@@ -1,0 +1,7 @@
+name: worskhop-reproducible-research
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - jupyter

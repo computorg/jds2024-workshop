@@ -1,0 +1,87 @@
+direction: right
+
+workflows-repo : {
+    workflow-env: {
+        shape: document
+    }
+    workflow-quarto: {
+        shape: document
+    }
+}
+
+...@base-gh-workflows
+
+article: "Article"
+
+template.workflows : {
+    shape: rectangle
+    workflow-env: {
+        shape: document
+        repolink: "link to workflow-env"
+    }
+    workflow-quarto: {
+        shape: document
+        repolink: "link to workflow-quarto"
+    }
+}
+
+article*.workflows : {
+    shape: rectangle
+    workflow-env: {
+        shape: document
+        repolink: "link to workflow-env"
+    }
+    workflow-quarto: {
+        shape: document
+        repolink: "link to workflow-quarto"
+    }
+}
+
+template.workflows.workflow-env.repolink -> workflows-repo.workflow-env : link {
+    style: {
+        animated: true
+    }
+}
+
+template.workflows.workflow-quarto.repolink -> workflows-repo.workflow-quarto : link {
+    style: {
+        animated: true
+    }
+}
+
+article*.workflows.workflow-env.repolink -> workflows-repo.workflow-env : link {
+    style: {
+        animated: true
+    }
+}
+
+article*.workflows.workflow-quarto.repolink -> workflows-repo.workflow-quarto : link {
+    style: {
+        animated: true
+    }
+}
+
+article* : {
+    shape: package
+    style: {
+        fill: lightblue
+    }
+}
+
+template.workflows -> article*.workflows : copy {
+    style: {
+        stroke: red
+        stroke-width: 2
+        font-size: 30
+        font-color: red
+    }
+}
+
+template -> article* : clone {
+    style: {
+        stroke: orange
+        stroke-width: 2
+        font-size: 30
+        font-color: orange
+    }
+}
