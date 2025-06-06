@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-12-05">
+
+<title>Workshop on Reproducible Research – Computo workshop</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Computo workshop</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Site</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../_slides/index.html"> 
+<span class="menu-text">Slides</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/computorg/jds2025-workshop-template"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#replication-crisis" id="toc-replication-crisis" class="nav-link active" data-scroll-target="#replication-crisis">Replication Crisis</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Workshop on Reproducible Research</h1>
+<p class="subtitle lead">A hands-on introduction to quarto with a Computo submission</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Julien Chiquet <a href="mailto:julien.chiquet@inrae.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            INRAE, MIA-Paris
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Pierre Neuvial <a href="mailto:Pierre.Neuvial@math.univ-toulouse.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            CNRS, IMT
+          </p>
+        <p class="affiliation">
+            Université de Toulouse
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Ghislain Durif <a href="mailto:ghislain.durif@ens-lyon.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            CNRS
+          </p>
+        <p class="affiliation">
+            ENS Lyon, LBMC
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Tanguy Lefort <a href="mailto:tanguy.lefort@umontpellier.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Université de Montpellier, IMAG
+          </p>
+        <p class="affiliation">
+            CNRS, Inria, LIRMM
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">François-David Collin <a href="mailto:francois-david.collin@umontpellier.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            CNRS
+          </p>
+        <p class="affiliation">
+            IMAG
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 5, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="replication-crisis" class="level1">
+<h1>Replication Crisis</h1>
+<p><strong>Author:</strong> John Whitfield<br>
+<strong>Source:</strong> London Review of Books, Vol. 43 No.&nbsp;19, 7 October 2021<br>
+<a href="https://www.lrb.co.uk/the-paper/v43/n19/john-whitfield/replication-crisis">Original Article</a></p>
+<p>In November 2017 the <em>China Daily</em> ran a story about a Beijing barbecue restaurant called Liuyedao (‘The Lancet’), which was offering a discount to any customer who could show they had recently published a paper in a scientific journal. The restaurant took the journal’s ‘impact factor’ – a statistic based on the average number of citations received by papers carried in the journal in the two years after publication – and converted it into a cash equivalent, to be deducted from the bill.</p>
+<p>The impact factor was invented in the 1960s as a way of helping academic librarians decide which journals to hold in their collections. It is a reasonable measure of the strength of a journal. But the distribution of citations is skewed: a small fraction of papers account for most of them, while most papers get few if any. So the impact factor isn’t much use as a guide to the quality of an individual paper: no one should judge a scientific article by the journal in which it appears. Most people working in research know this. Yet because scientific papers are difficult for non-specialists to understand, and because it is so hard to keep on top of the literature, the temptation to assess scientific work by means of a single, simple measurement, even a bogus one, is hard to resist. As a result, the impact factor has become a marker of prestige. Even before anyone has read it, a paper published in the <em>Lancet,</em> which currently has an impact factor of 60, is worth far more than a paper in a specialist outlet such as <em>Clinical Genetics</em>, with its impact factor of 4.4. Unsurprisingly, this has an influence on where researchers submit their work.</p>
+<p>Whether and where a researcher gets hired depends to a large extent on their publication record: how many papers they put their name to, which journals they are published in, how many times their papers are cited in other papers. This has created a system that favours speed of publication, volume of output and – because journals prefer new, eye-catching findings over negative results or replications of previous work – sensationalism. There can be financial incentives too. At the time the barbecue-discount story appeared, many Chinese universities were giving cash bonuses for publications, with higher-impact journals securing bigger rewards for researchers. In a survey of Chinese university policy in 2016, the average bonus for the lead author of a paper in <em>Nature</em> or <em>Science</em> was calculated at $44,000, five times the average professorial salary.</p>
+<p>The chief form of pre-publication quality control in science is peer review. Journal editors send submissions to experts, usually two of them. Their job is to judge whether a study’s methods, data and analyses are sound, and whether the evidence backs up the authors’ claims. Their (most often anonymous) reports assess the work’s validity and importance, suggest how it might be improved, and recommend rejection or acceptance, usually with required revisions. Reviewers are increasingly difficult to find, since they are generally not paid or otherwise credited, and must fit the work around their own teaching, research and administrative responsibilities. It is next to impossible, even in the several hours it takes to put together a typical review, to check all of a paper’s methods and analyses. The same goes for detecting simple errors, such as a wrong number typed into a spreadsheet or a mix-up in cell cultures, let alone fabricated, fraudulent data. As a result, reviewers and journals end up taking a lot on trust. Even diligent reviewing is inconsistent, since reviewers may disagree about a paper’s merits, and will have their own intellectual and social biases.</p>
+<p>The most comprehensive attempt to estimate the extent of the replication crisis was made in a 2015 study called ‘Estimating the Reproducibility of Psychological Science’. The researchers behind it tried to replicate 100 studies published in three psychology journals. They found that only 39 per cent of the replications were successful. The study caused a stir, not least because the journals involved had a high impact factor. The researchers concluded that ‘the scientific community should be concerned about the current state of reproducibility in psychology’. Since then, similar studies have been carried out in other fields, with varying results. A 2016 analysis of 21 studies in cancer biology found that only six could be successfully replicated. A 2018 survey of 1,500 researchers across various disciplines found that 70 per cent had tried and failed to reproduce another scientist’s work.</p>
+<p>In response to the crisis, some journals have introduced stricter editorial policies, increased transparency requirements, and more rigorous peer review processes. Funding bodies and governments are also taking action. In 2018, the US National Institutes of Health announced a new policy requiring researchers to submit a plan for how they will make their data and findings available to the public. The European Commission has launched a pilot project to test the feasibility of a European research data space, which would make it easier for researchers to share data across borders and disciplines.</p>
+<p>There is widespread agreement that something has to be done about these problems. Funding bodies and governments are showing an increasing willingness to act as regulators. In the UK, the House of Commons Science and Technology Committee has launched an inquiry into research integrity, and in the US, the National Academies of Sciences, Engineering, and Medicine have convened a committee to develop recommendations for improving the reproducibility of research. The stakes are high. If the problems are not addressed, public trust in science will erode, and the ability of researchers to secure funding, publish their work, and have it taken seriously will be undermined.</p>
+<p>All this is welcome, but one issue that those in authority have shown little interest in tackling is how to reduce the reliance of the system on short-term contracts, which far outnumber the permanent jobs available in publicly funded research. Is it even possible to increase job security for researchers at a time when teaching in universities is becoming ever more precarious? A similar question might be asked about universities’ ability to resist the forces that drive competition in research. Can any particular institution or nation afford to opt out unilaterally? What happens if the kinder, gentler universities start to slide in the international rankings, which are based partly on measures of publications and citations?</p>
+<p>Such reform as there has been is most evident in academic publishing. Historically, as scientists see it, the largest for-profit publishing companies have taken their free labour as authors and reviewers and made them pay through the nose to read the results. In 2019 Elsevier, the largest of these companies, had a profit margin of 37 per cent. The open access movement, begun by activist scientists around the turn of the century, makes the moral case that readers shouldn’t have to pay to see the results of science that has already been paid for with public money, and the practical case that freely accessible papers would be easier to validate and build on. The movement has made a lot of progress, at least in Europe, where the EU and many other funders, including UKRI and the Wellcome, have now stopped the paywalling of publications resulting from their grants.</p>
+<p>Print journals have always been selective because they have a limited number of pages. Traditionally, they have sought to judge not just whether a given paper is sound, but whether its findings are important. Many still do; it’s part of their cachet. But as most journals move entirely online, space is no longer an issue. In the twenty years since the open access movement began, a new business model has emerged in which subscriptions are replaced by publication fees charged to authors. We have seen the rise of open access megajournals, which ask reviewers to judge the validity of results but not their significance, and accept all submissions, including replications and negative findings. This approach is not watertight; in 2016, the Public Library of Science’s megajournal <em>PLOS One</em>, which currently charges a publication fee of $1695 per paper, carried a study reporting that the human hand showed ‘the proper design by the Creator’. But the model has proved popular both with researchers, who get a relatively quick, painless and cheap route to publication, and with publishers, who get a cash cow.</p>
+<p><em>PLOS One</em> has an impact factor of just 2.7. ‘Ideally,’ Ritchie writes, ‘what we want to see is an accurate proportion of null results, and more attempted replications, in the glamorous, high-impact journals.’ But that’s to take for granted that the ‘glamorous journals’ should retain their status. The argument can be made that the scholarly publishing industry is beyond fixing, and we would be better off without journals – perhaps even without pre-publication peer review. Publishers are no longer needed for typesetting or distribution, and social media – including specialist sites such as ResearchGate, which has more than 17 million users – can perform some of their curatorial and marketing functions. What value the journals retain lies in their brands, and in their capacity to organise peer review. But if peer review isn’t working, what is the brand worth? Why not just let researchers make their work public, and let it thrive, or wither?</p>
+<p>This approach is feasible thanks to preprint servers. These are online repositories on which papers can be posted without peer review, though most of them do carry out vetting for plagiarism, health and security risks, and general appropriateness. Publishing studies as preprints has long been the norm in many areas of physics and maths, where pretty much everything in journals will already have appeared – for free, in an unreviewed but often very similar form – on a site called arXiv (‘archive’). Biologists were initially slower to publish preprints, partly as a result of the worry that showing their hand would make it easier for others to beat them to a reviewed journal paper. This reluctance had already begun to fade before 2020, but the Covid-19 pandemic has transformed attitudes. The imperative to share findings as quickly and widely as possible, so that others can test and make use of them, is inarguable.</p>
+<p>This is science working in the way many would want it to: rapid, open, collaborative, and focused on the benefit to the public. There is a downside: preprint servers and journals have been swamped by shoddy papers, sent out in a hurry to catch the Covid-19 bandwagon. If scientists are the only ones reading the work, this isn’t much of a problem, but over the course of the last year, journalists, patients, cranks and anyone else with an interest have also been monitoring the servers, and they don’t always distinguish between a preprint and a reviewed paper. As a result, some papers that would have been unlikely to make it into a journal have received bursts of publicity. In January last year, for example, a paper appeared on the bioRxiv server, run out of the august Cold Spring Harbor Laboratory on Long Island, claiming that there was an ‘uncanny similarity’ between Sars-Cov-2 and HIV, which was ‘unlikely to be fortuitous’. This fuelled wild talk that the coronavirus was an engineered bioweapon. The article now bears a red ‘withdrawn’ label, but it is still easy to find and free to read. (To preserve the integrity of the literature, retracted papers usually aren’t deleted.) The following month, the Fox News presenter Tucker Carlson cited a preprint posted on ResearchGate claiming that the Wuhan wet market suspected of being the origin of the outbreak was close to a coronavirus research lab. The author later took it down, telling the <em>Wall Street Journal</em> that it ‘was not supported by direct proofs’; Carlson said the paper had been ‘covered up’.</p>
+<p>This problem isn’t confined to preprints: plenty of journals have retracted Covid-19 studies that had passed peer review and been published. And science has always been open to misappropriation; making it less accessible, if that were possible, wouldn’t end that. But papers, whether journal articles or preprints, are still the most important interface between scientific research and wider society. The increased potential for the rapid dissemination of bad-faith interpretations of scientific publications gives researchers one more good reason to take pains over their work.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/computorg\.github\.io\/jds2024-workshop\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

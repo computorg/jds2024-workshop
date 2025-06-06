@@ -1,11 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://computorg.github.io/jds2024-workshop/index.html</loc>
-    <lastmod>2024-05-29T16:56:14.715Z</lastmod>
+    <loc>https://computorg.github.io/jds2024-workshop/about.html</loc>
+    <lastmod>2025-06-05T22:57:51.586Z</lastmod>
   </url>
   <url>
-    <loc>https://computorg.github.io/jds2024-workshop/about.html</loc>
-    <lastmod>2024-05-21T15:48:10.709Z</lastmod>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/ioannidis2005.html</loc>
+    <lastmod>2025-04-23T18:45:23.623Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/quarto-docs.html</loc>
+    <lastmod>2025-04-23T10:40:45.120Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/computo-journal.html</loc>
+    <lastmod>2025-04-23T12:25:25.893Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/steen2011.html</loc>
+    <lastmod>2025-04-23T12:11:41.416Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/knuth1984.html</loc>
+    <lastmod>2025-04-23T18:45:13.199Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/allison2016.html</loc>
+    <lastmod>2025-04-23T12:12:50.762Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/wikipedia-literate-programming.html</loc>
+    <lastmod>2025-04-23T18:57:48.512Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/hernandez2023.html</loc>
+    <lastmod>2025-04-23T18:45:25.111Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/team2021distill.html</loc>
+    <lastmod>2025-04-23T10:40:45.120Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/bastian2016.html</loc>
+    <lastmod>2025-04-23T12:34:00.678Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/olah2017research.html</loc>
+    <lastmod>2025-04-23T10:40:45.125Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/whitfield2021.html</loc>
+    <lastmod>2025-04-23T18:50:25.223Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/hohman2020communicating.html</loc>
+    <lastmod>2025-04-23T10:40:45.125Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/docs/theturingway2022.html</loc>
+    <lastmod>2025-04-23T18:45:20.258Z</lastmod>
+  </url>
+  <url>
+    <loc>https://computorg.github.io/jds2024-workshop/index.html</loc>
+    <lastmod>2025-06-06T05:52:17.902Z</lastmod>
   </url>
 </urlset>

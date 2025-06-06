@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-05-31">
+<meta name="dcterms.date" content="2025-12-05">
 
-<title>Computo workshop - Workshop on Reproducible Research</title>
+<title>Computo workshop – Computo workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,8 +22,9 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 /* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -84,15 +85,16 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -121,7 +123,7 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -154,7 +156,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -166,7 +168,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -180,8 +182,15 @@ window.Quarto = {
 <span class="menu-text">Slides</span></a>
   </li>  
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/computorg/jds2025-workshop-template"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -197,8 +206,10 @@ window.Quarto = {
   <ul>
   <li><a href="#planning" id="toc-planning" class="nav-link active" data-scroll-target="#planning">Planning</a>
   <ul class="collapse">
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#morning-session" id="toc-morning-session" class="nav-link" data-scroll-target="#morning-session">Morning session</a></li>
+  <li><a href="#afternoon-session" id="toc-afternoon-session" class="nav-link" data-scroll-target="#afternoon-session">Afternoon session</a></li>
   </ul></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
   <li><a href="#short-introduction-to-computo-and-quarto" id="toc-short-introduction-to-computo-and-quarto" class="nav-link" data-scroll-target="#short-introduction-to-computo-and-quarto">Short introduction to Computo and quarto</a>
   <ul class="collapse">
   <li><a href="#team" id="toc-team" class="nav-link" data-scroll-target="#team">Team</a></li>
@@ -261,11 +272,15 @@ window.Quarto = {
   <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
   <li><a href="#the-main-pipeline-step-by-step" id="toc-the-main-pipeline-step-by-step" class="nav-link" data-scroll-target="#the-main-pipeline-step-by-step">The main pipeline, step by step</a></li>
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
-  <li><a href="#mock-repository" id="toc-mock-repository" class="nav-link" data-scroll-target="#mock-repository">Mock repository</a></li>
   <li><a href="#creating-a-repo-from-a-template" id="toc-creating-a-repo-from-a-template" class="nav-link" data-scroll-target="#creating-a-repo-from-a-template">Creating a repo from a template</a></li>
-  <li><a href="#language-version" id="toc-language-version" class="nav-link" data-scroll-target="#language-version">Language version</a></li>
+  <li><a href="#cloning-the-repository" id="toc-cloning-the-repository" class="nav-link" data-scroll-target="#cloning-the-repository">Cloning the repository</a></li>
+  <li><a href="#edit-the-quarto-document" id="toc-edit-the-quarto-document" class="nav-link" data-scroll-target="#edit-the-quarto-document">Edit the quarto document</a></li>
+  <li><a href="#rendering-the-document" id="toc-rendering-the-document" class="nav-link" data-scroll-target="#rendering-the-document">Rendering the document</a></li>
+  <li><a href="#making-the-ci-work" id="toc-making-the-ci-work" class="nav-link" data-scroll-target="#making-the-ci-work">Making the CI work</a></li>
+  <li><a href="#checking-the-ci" id="toc-checking-the-ci" class="nav-link" data-scroll-target="#checking-the-ci">Checking the CI</a></li>
+  <li><a href="#a-brief-overview-of-the-ci" id="toc-a-brief-overview-of-the-ci" class="nav-link" data-scroll-target="#a-brief-overview-of-the-ci">A brief overview of the CI</a></li>
+  <li><a href="#submitting-the-article" id="toc-submitting-the-article" class="nav-link" data-scroll-target="#submitting-the-article">Submitting the article</a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -274,7 +289,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Workshop on Reproducible Research</h1>
+<h1 class="title">Computo workshop</h1>
 <p class="subtitle lead">A hands-on introduction to quarto with a Computo submission</p>
 </div>
 
@@ -343,7 +358,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 31, 2024</p>
+      <p class="date">December 5, 2025</p>
     </div>
   </div>
   
@@ -355,24 +370,32 @@ window.Quarto = {
 </header>
 
 
-<section id="planning" class="level1">
-<h1>Planning</h1>
+<section id="planning" class="level2">
+<h2 class="anchored" data-anchor-id="planning">Planning</h2>
+<section id="morning-session" class="level3">
+<h3 class="anchored" data-anchor-id="morning-session">Morning session</h3>
 <ul>
-<li>9h-10h: Introduction to Computo and Quarto</li>
-<li>10h-10h30: Coffee break/Discussion</li>
-<li>10h30-11h30: Hands-on with a toy example</li>
-<li>11h30-12h30: Follow-up and optional personal article submission</li>
+<li>⏰ 9h-10h: Introduction to Computo and Quarto</li>
+<li>☕ 10h-10h30: Coffee break/Discussion</li>
+<li>🧑‍💻 10h30-12h00: Hands-on with a toy example</li>
 </ul>
+</section>
+<section id="afternoon-session" class="level3">
+<h3 class="anchored" data-anchor-id="afternoon-session">Afternoon session</h3>
+<ul>
+<li>📝 13h30-17h00: Follow-up with personal article submission process</li>
+</ul>
+</section>
+</section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
 <ul>
-<li>Understand the benefits of reproducible research</li>
-<li>Learn how to create a quarto document</li>
-<li>Learn how to include code, data, and narrative text in a quarto document</li>
-<li>Learn how to submit a quarto document to Computo</li>
-<li>How to navigate the Computo submission process (optional)</li>
+<li>🎯 Understand the benefits of reproducible research</li>
+<li>📄 Learn how to create a quarto document</li>
+<li>📝 Learn how to include code, data, and narrative text in a quarto document</li>
+<li>📤 Learn how to submit a quarto document to Computo</li>
+<li>🧭 How to navigate the Computo submission process (optional)</li>
 </ul>
-</section>
 </section>
 <section id="short-introduction-to-computo-and-quarto" class="level1">
 <h1>Short introduction to Computo and quarto</h1>
@@ -381,6 +404,9 @@ window.Quarto = {
 <div class="columns">
 <div class="column" style="width:60%;">
 <p>Editorial board</p>
+<!-- TODO: Mettre à jour le board :
+- Enlever Mathurin et Ghislain
+- Ajouter Aymeric -->
 </div><div class="column" style="width:10%;">
 
 </div><div class="column" style="width:20%;">
@@ -401,7 +427,7 @@ window.Quarto = {
 <p><img src="./people/pierre.jpg" class="img-fluid" width="120"></p>
 <section id="pierre-neuvial" class="level4">
 <h4 class="anchored" data-anchor-id="pierre-neuvial">Pierre Neuvial</h4>
-<p><small>Statistique, DR CNRS<br> IMT Toulouse<br></small></p>
+<p><small>Statistics, DR CNRS<br> IMT Toulouse<br></small></p>
 </section>
 </div>
 </div><div class="column" style="width:20%;">
@@ -446,7 +472,7 @@ window.Quarto = {
 <p><img src="./people/chloe.jpg" class="img-fluid" width="120"></p>
 <section id="chloé-azencott" class="level4">
 <h4 class="anchored" data-anchor-id="chloé-azencott">Chloé Azencott</h4>
-<p><small>Machine Learning <br> CR MinesParisTech</small></p>
+<p><small>Machine Learning CR MinesParisTech</small></p>
 </section>
 </div>
 </div><div class="column" style="width:10%;">
@@ -465,9 +491,6 @@ window.Quarto = {
 <section id="what-is-reproducible-research" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-reproducible-research">What is reproducible research?</h2>
 <p>Fundamentally, it provides three things:</p>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout="[[20,80],[20,80],[20,80]]">
 <div class="quarto-layout-row quarto-layout-valign-center">
 <div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
@@ -487,10 +510,10 @@ window.Quarto = {
 </div>
 <div class="quarto-layout-row quarto-layout-valign-center">
 <div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
-<p><img src="img/head-side-thinking.svg" width="100" height="100"></p>
+<p><img src="img/head-side-thinking.svg" class="img-fluid" width="100"></p>
 </div>
 <div class="fragment quarto-layout-cell" style="flex-basis: 80.0%;justify-content: flex-start;">
-<p>A path to understand the results and the process that led to them (unlike cooking…<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>)</p>
+<p>A path to understanding the results and the process that led to them (unlike cooking…<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>)</p>
 </div>
 </div>
 </div>
@@ -498,9 +521,6 @@ window.Quarto = {
 <section id="pre-computo-era" class="level2">
 <h2 class="anchored" data-anchor-id="pre-computo-era">Pre-Computo era</h2>
 <div class="r-stack">
-<div>
-
-</div>
 <div class="fragment quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -510,9 +530,9 @@ window.Quarto = {
 <p>The pdf era and paper submission.</p>
 <p>The reproducibility was not a priority:</p>
 <ul>
-<li>Tools has to be bought, installed, and maintained</li>
-<li>Data and code were not shared (social engineering</li>
-<li>Even methodology details are often missing</li>
+<li>🛠️ Tools had to be bought, installed, and maintained</li>
+<li>🔒 Data and code were not shared (social engineering)</li>
+<li>❓ Even methodology details are often missing</li>
 </ul>
 </div>
 </div>
@@ -520,7 +540,7 @@ window.Quarto = {
 <p><img src="img/perplex-scentist.jpg" class="center fragment img-fluid" width="600"></p>
 </div>
 <div class="notes">
-<p>Social engineering required to get reproducible results: at best you just have to ask the authors, at worst you have to reverse-engineer everything… and have no guarantee whatsoever to get to the same results, when authors are in a “Après moi, le déluge” mood and ditch, forget or let it crumble once the paper is published.</p>
+<p>Social engineering is required to get reproducible results: at best you just have to ask the authors, at worst you have to reverse-engineer everything… and have no guarantee whatsoever to get to the same results, when authors are in an “Après moi, le déluge” mood and ditch, forget or let it crumble once the paper is published.</p>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -531,17 +551,14 @@ window.Quarto = {
 <p>And then in the Machine Learning domain, there was <a href="https://distill.pub/2016/misread-tsne/" data-preview-link="true">distill.pub</a> <span class="citation" data-cites="olah2017research">[<a href="#ref-olah2017research" role="doc-biblioref">1</a>]</span></p>
 <div class="incremental">
 <ul class="incremental">
-<li>state-of-the art visualizations</li>
-<li>paradigm shift in the scientific publication: <strong>“distillation” of complex ideas</strong></li>
-<li>100% reproducible (just a git clone and a few standard commands)</li>
+<li>📊 State-of-the-art visualizations</li>
+<li>🔄 Paradigm shift in scientific publication: <strong>“distillation” of complex ideas</strong></li>
+<li>💯% reproducible (just a git clone and a few standard commands)</li>
 </ul>
 </div>
 </div>
 <div class="fragment" style="font-size: 1.8em;">
 <p>but…</p>
-</div>
-<div>
-
 </div>
 <div class="quarto-layout-panel" data-layout="[45,-10,45]">
 <div class="quarto-layout-row">
@@ -562,15 +579,15 @@ window.Quarto = {
 </div>
 </div>
 <div class="notes">
-<p>Due to a serie of burnouts from the staff</p>
+<p>Due to a series of burnouts from the staff</p>
 </div>
 </section>
 <section id="the-rise-of-the-pragmatic-2" class="level2" data-auto-animate="true" data-auto-animate-easing="&quot;ease-in-out">
 <h2 data-auto-animate="true" data-auto-animate-easing="&quot;ease-in-out" class="anchored" data-anchor-id="the-rise-of-the-pragmatic-2">The Rise of the Pragmatic</h2>
 <p><a href="https://distill.pub">distill.pub</a>’s goals were right, but they outpaced themselves in terms of development complexity.</p>
 <ul>
-<li><strong>Computo</strong> is a fresh start with a pragmatic approach</li>
-<li>leverage what the scientific community is already using (Rmarkdown, Jupyter notebooks, etc.)</li>
+<li>🚀 <strong>Computo</strong> is a fresh start with a pragmatic approach</li>
+<li>🧰 Leverage what the scientific community is already using (Rmarkdown, Jupyter notebooks, etc.)</li>
 </ul>
 <div data-id="where-computo-stands">
 <p><img src="figures/where-computo-stands2.svg" class="img-fluid"></p>
@@ -578,10 +595,7 @@ window.Quarto = {
 </section>
 <section id="origin-of-computo-2020s" class="level2">
 <h2 class="anchored" data-anchor-id="origin-of-computo-2020s">Origin of Computo (~ 2020s)</h2>
-<p><a href="https://www.sfds.asso.fr/">French statistical society</a> appoints a “publication” committee (lead by Julien then Pierre) to develop a new journal</p>
-<div>
-
-</div>
+<p><a href="https://www.sfds.asso.fr/">French Statistical Society</a> appoints a “publication” committee (led by Julien then Pierre) to develop a new journal</p>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -597,16 +611,11 @@ Assessment
 <div class="callout-body-container callout-body">
 <div class="incremental no-bullets">
 <ul class="incremental">
-<li>😔 Multiplication of “traditional” journals…<br>
-</li>
-<li>😔 No valorization of “negative” results<br>
-</li>
-<li>😥 No or not enough valorization of source codes and case studies<br>
-</li>
-<li>😱 ↘ of publication quality and time dedicated to each article (on author or reviewer sides) <span class="citation" data-cites="hanson2023">[<a href="#ref-hanson2023" role="doc-biblioref">3</a>]</span><br>
-</li>
-<li>😱 Issue with <em>scientific</em> reproducibility (analyses, experiments) <span class="citation" data-cites="ioannidis2005 steen2011 allison2016 bastian2016 whitfield2021 hernandez2023">[<a href="#ref-ioannidis2005" role="doc-biblioref">4</a>–<a href="#ref-hernandez2023" role="doc-biblioref">9</a>]</span><br>
-</li>
+<li>😔 Multiplication of “traditional” journals…</li>
+<li>😔 No valorization of “negative” results</li>
+<li>😥 No or not enough valorization of source codes and case studies</li>
+<li>😱 ↘ of publication quality and time dedicated to each article (on author or reviewer sides) <span class="citation" data-cites="hanson2023">[<a href="#ref-hanson2023" role="doc-biblioref">3</a>]</span></li>
+<li>😱 Issue with <em>scientific</em> reproducibility (analyses, experiments) <span class="citation" data-cites="ioannidis2005 steen2011 allison2016 bastian2016 whitfield2021 hernandez2023">[<a href="#ref-ioannidis2005" role="doc-biblioref">4</a>–<a href="#ref-hernandez2023" role="doc-biblioref">9</a>]</span></li>
 </ul>
 </div>
 </div>
@@ -624,8 +633,8 @@ Point of view
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Need for renewal regarding scientific research implementation</li>
-<li>Need for higher standard regarding result publications</li>
+<li>🔄 Need for renewal regarding scientific research implementation</li>
+<li>📈 Need for higher standards regarding result publications</li>
 </ul>
 </div>
 </div>
@@ -664,11 +673,11 @@ Open access
 <div class="columns">
 <div class="column" style="width:90%;">
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Open_access#Diamond/platinum_OA">“Diamond” open access</a> (free to publish and free to read, possible to reuse)</li>
+<li>💎 <a href="https://en.wikipedia.org/wiki/Open_access#Diamond/platinum_OA">“Diamond” open access</a> (free to publish and free to read, possible to reuse)</li>
 <li>🅭 🅯 Content published under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a> license (attribution, share, adapt)</li>
-<li>Reviews and discussions available after acceptance for publication (anonymous reviews)</li>
+<li>📝💬 Reviews and discussions available after acceptance for publication (anonymous reviews)</li>
 </ul>
-<p>⇝ In accordance with <a href="https://www.budapestopenaccessinitiative.org/">Budapest Open Access Initiative (BOAI)</a> and <a href="https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/">Plan S</a></p>
+<p>➡️ In accordance with <a href="https://www.budapestopenaccessinitiative.org/">Budapest Open Access Initiative (BOAI)</a> and <a href="https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/">Plan S</a></p>
 </div><div class="column" style="width:10%;">
 <p><img src="img/open_access_logo.png" class="img-fluid" width="70"></p>
 </div>
@@ -686,35 +695,35 @@ Reproducible
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Numerical (statistical) reproducibility is a necessary condition</li>
-<li>Source code and data should be available, at least partly executed and fully executable</li>
+<li>🔢 Numerical (statistical) reproducibility is a necessary condition</li>
+<li>💾 Source code and data should be available, at least partly executed and fully executable</li>
 </ul>
 </div>
 </div>
 </section>
 <section id="note-on-reproducible-research-desquilbet2019-hejblum2020-the_turing_way2022" class="level2">
 <h2 class="anchored" data-anchor-id="note-on-reproducible-research-desquilbet2019-hejblum2020-the_turing_way2022">Note on reproducible research <span class="citation" data-cites="desquilbet2019 hejblum2020 the_turing_way2022">[<a href="#ref-desquilbet2019" role="doc-biblioref">10</a>–<a href="#ref-the_turing_way2022" role="doc-biblioref">12</a>]</span></h2>
-<section id="why-reproducing-scientific-results" class="level4">
-<h4 class="anchored" data-anchor-id="why-reproducing-scientific-results">Why reproducing scientific results?</h4>
+<section id="why-reproduce-scientific-results" class="level4">
+<h4 class="anchored" data-anchor-id="why-reproduce-scientific-results">Why reproduce scientific results?</h4>
 <ul>
-<li>To strengthen their credibility</li>
-<li>To check for errors (everyone makes error at some point!!!)</li>
-<li>To build new research upon them (science is incremental)</li>
+<li>💪 To strengthen their credibility</li>
+<li>🔍 To check for errors (everyone makes errors at some point!!!)</li>
+<li>🧱 To build new research upon them (science is incremental)</li>
 </ul>
 </section>
 <section id="issues" class="level4">
 <h4 class="anchored" data-anchor-id="issues">Issues?</h4>
 <ul>
-<li>Reproduce numerical scientific results is often difficult (technology/environment evolution, source code/environment configuration/software partially available or not available)</li>
-<li>Waste of time and resources to reproduce existing non-reproducible results</li>
+<li>🔄 Reproduce numerical scientific results is often difficult (technology/environment evolution, source code/environment configuration/software partially available or not available)</li>
+<li>⏳💸 Waste of time and resources to reproduce existing non-reproducible results</li>
 </ul>
 </section>
 <section id="reproducible-research" class="level4">
 <h4 class="anchored" data-anchor-id="reproducible-research">Reproducible research?</h4>
 <ul>
-<li>For others but also <strong>for your future self</strong></li>
-<li>Improve result credibility</li>
-<li>Facilitate future research works</li>
+<li>👥 For others but also <strong>for your future self</strong></li>
+<li>✅ Improve result credibility</li>
+<li>🚀 Facilitate future research works</li>
 </ul>
 </section>
 </section>
@@ -727,9 +736,9 @@ Reproducible
 <section id="economical-model" class="level3">
 <h3 class="anchored" data-anchor-id="economical-model">“Economical” model</h3>
 <ul>
-<li>A few tenacious people…</li>
-<li>Free/Open-source community tools (Pandoc, Quarto, Git forge)</li>
-<li>Institutional support (INRAE, INRIA, CNRS, SFdS)</li>
+<li>💪 A few tenacious people…</li>
+<li>🛠️ Free/Open-source community tools (Pandoc, Quarto, Git forge)</li>
+<li>🏛️ Institutional support (INRAE, INRIA, CNRS, SFdS)</li>
 </ul>
 </section>
 </section>
@@ -748,15 +757,15 @@ Reproducible
 <section id="reviewing-system" class="level3">
 <h3 class="anchored" data-anchor-id="reviewing-system">Reviewing system</h3>
 <ul>
-<li>Anonymous exchange published after acceptance</li>
-<li>Reviewer pool (you can join)</li>
-<li>[<em>Ongoing switch from Scholastica to Open review</em>]</li>
+<li>🕵️ Anonymous exchange published after acceptance</li>
+<li>🧑‍⚖️ Reviewer pool (you can join)</li>
+<li>🔄 [<em>Ongoing switch from Scholastica to Open review</em>]</li>
 </ul>
 </section>
 </div><div class="column" style="width:35%;">
 <section id="solutionsprototype" class="level4">
 <h4 class="anchored" data-anchor-id="solutionsprototype">Solutions/Prototype</h4>
-<p>Reproducible article and computations</p>
+<p>Reproducible articles and computations</p>
 <p><a href="https://quarto.org"><img src="img/quarto.png" height="40"></a></p>
 <p>Automatic editorial reproducibility</p>
 <p><a href="https://github.com/features/actions"><img src="img/github_actions.png" height="80"></a></p>
@@ -776,15 +785,15 @@ Reproducible
 <li>Rendering includes text, code and results (from code computations)</li>
 </ul>
 <p><br></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown {markdown} code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "My article"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>We compute 1+1:</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="sc">\`\`\`</span>{r}</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>1+1</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="sc">\`\`\`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">+</span><span class="dv">1</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="note-on-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="note-on-quarto">Note on quarto</h2>
@@ -927,12 +936,12 @@ Tip
 </div>
 </div>
 </div>
-<p><small>Configuration file versionned and used during CI compilation/publication action</small></p>
+<p><small>Configuration file versioned and used during CI compilation/publication action</small></p>
 </section>
 <section id="step-3-reproduction" class="level3">
 <h3 class="anchored" data-anchor-id="step-3-reproduction">Step 3: (re)production</h3>
 <p>A <code>git push</code> command will trigger your article compilation (including computations) and publication as a <a href="https://pages.github.com"><em>github</em> page</a><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-<p><small>See the preconfigured <code>.github/workflows/build.yml</code> file for the <em>github</em> action configuration<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></small></p>
+<p><small>See the pre-configured <code>.github/workflows/build.yml</code> file for the <em>github</em> action configuration<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></small></p>
 </section>
 </section>
 <section id="author-point-of-view-33" class="level2">
@@ -944,8 +953,8 @@ Tip
 <h3 class="anchored" data-anchor-id="step-4-submit-your-article">Step 4: submit your article</h3>
 <p>If the CI process succeeds, both HTML and PDF versions are published on the <a href="https://computorg.github.io/template-computo-R/"><em>github-page</em></a> associated to the repository</p>
 <p><br><br></p>
-<section id="scholastica-open-review" class="level4">
-<h4 class="anchored" data-anchor-id="scholastica-open-review"><s>Scholastica</s> Open review</h4>
+<section id="scholastica-open-review-soon-to-be-replaced-by-pci" class="level4">
+<h4 class="anchored" data-anchor-id="scholastica-open-review-soon-to-be-replaced-by-pci"><s>Scholastica</s> Open review (soon to be replaced by PCI)</h4>
 <p><a href="https://openreview.net/group?id=Computo" class="uri">https://openreview.net/group?id=Computo</a></p>
 <p>Submit:</p>
 <ul>
@@ -964,20 +973,20 @@ Tip
 <h2 class="anchored" data-anchor-id="editor-point-of-view">Editor point of view</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
-<p>After a “traditionnal” review process, a 3 step procedure:</p>
+<p>After a “traditional” review process, a 3-step procedure:</p>
 <ol type="1">
-<li>Acceptance</li>
-<li>Pre-production</li>
-<li>Publication in Computo (with a DOI)</li>
+<li>✅ Acceptance</li>
+<li>🛠️ Pre-production</li>
+<li>📰 Publication in Computo (with a DOI)</li>
 </ol>
 <p>including</p>
 <ul>
-<li>Copy of the author git repository to <a href="https://github.com/computorg/" class="uri">https://github.com/computorg/</a></li>
-<li>Final version formatting</li>
-<li>Review report publication</li>
-<li>Registration in the journal bibliographic data base</li>
-<li>Copy of the repository to <a href="https://archive.softwareheritage.org/browse/search/?q=computorg%2Fpublished&amp;with_visit=true&amp;with_content=true">Software Heritage</a> for archiving</li>
-<li>Publication of the article on the journal website</li>
+<li>📥 Copy of the author git repository to <a href="https://github.com/computorg/" class="uri">https://github.com/computorg/</a></li>
+<li>🖋️ Final version formatting</li>
+<li>📝 Review report publication</li>
+<li>📚 Registration in the journal bibliographic database</li>
+<li>🗄️ Copy of the repository to <a href="https://archive.softwareheritage.org/browse/search/?q=computorg%2Fpublished&amp;with_visit=true&amp;with_content=true">Software Heritage</a> for archiving</li>
+<li>🌐 Publication of the article on the journal website</li>
 </ul>
 </div><div class="column" style="width:30%;">
 <p><a href="https://github.com/computorg/published-paper-tsne/issues/5">Task-list = github issue</a></p>
@@ -989,12 +998,12 @@ Tip
 <h2 class="anchored" data-anchor-id="year-and-a-half-report">2year and a half report</h2>
 <p><br></p>
 <p>🥲 Fully operational + doi, ISSN</p>
-<p>🙂 7 published articles articles, 3 in preproduction, 6 under review (more details <a href="https://computo.sfds.asso.fr/publications/">here</a>)</p>
+<p>🙂 7 published articles, 3 in pre-production, 6 under review (more details <a href="https://computo.sfds.asso.fr/publications/">here</a>)</p>
 <p>🙂 x presentations (Montpellier, Toronto, Humastica, Grenoble, RR2023, etc.)</p>
 <p>🙂 <a href="https://www.recherche-reproductible.fr/">French reproducible research network</a></p>
 <p>🤯 Difficult to find reviewers</p>
 <p>🤔 Institutional support?</p>
-<p>🤔 Changing of practices in the scientific community?</p>
+<p>🤔 Changing practices in the scientific community?</p>
 <p><br></p>
 </section>
 <section id="discussion" class="level2">
@@ -1002,16 +1011,16 @@ Tip
 <section id="about-several-choices" class="level3">
 <h3 class="anchored" data-anchor-id="about-several-choices">About several choices</h3>
 <ul>
-<li><a href="https://quarto.org/"><code>quarto</code></a>: dynamic, agnostic language, <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>, community-based (<a href="https://pandoc.org/"><code>pandoc</code></a>), Rstudio/Posit support</li>
-<li><a href="https://github.com"><code>github</code></a>: dynamic, large user community but not institutional and limited computing resources</li>
+<li><a href="https://quarto.org"><img src="img/quarto.png" height="20"></a> <strong>Quarto</strong>: dynamic, agnostic language, <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>, community-based (<a href="https://pandoc.org/"><code>pandoc</code></a>), Rstudio/Posit support 🚀</li>
+<li><a href="https://github.com"><img src="img/github-mark.svg" height="20"></a> <strong>GitHub</strong>: dynamic, large user community but not institutional and limited computing resources 🌐</li>
 </ul>
 </section>
 <section id="comparisoninspiration" class="level3">
 <h3 class="anchored" data-anchor-id="comparisoninspiration">Comparison/inspiration</h3>
 <ul>
-<li><a href="https://peercommunityin.org/">Peer Community-In (PCI)</a><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, <a href="https://www.episciences.org/">EpiSciences</a>: different philosophy and/or functioning</li>
+<li><a href="https://peercommunityin.org/">Peer Community-In (PCI)</a><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, <a href="https://www.episciences.org/">EpiSciences</a>: peer review and publication of articles, but not reproducible by default, but we have just built an official community, stay tuned!</li>
 <li><a href="https://rescience.github.io/" class="uri">https://rescience.github.io/</a>: “remake” published articles</li>
-<li><a href="https://distill.pub" class="uri">https://distill.pub</a> (discontinued): technically more complicated and only ML/AI oriented</li>
+<li><a href="https://distill.pub" class="uri">https://distill.pub</a> (discontinued): technically more complicated and only ML/AI-oriented</li>
 </ul>
 </section>
 </section>
@@ -1019,10 +1028,10 @@ Tip
 <h2 class="anchored" data-anchor-id="perspectives">Perspectives</h2>
 <p><br></p>
 <ul>
-<li>Provision of computing resources (to be able to run all computations)</li>
-<li>Full <em>gitlab</em> support (CI/CD, docker, registry, etc.)</li>
-<li>Switch to a french institutional gitlab forge?</li>
-<li>Improve long-term reproducibility stack (<a href="https://www.docker.com/">docker</a> container, <a href="https://guix.gnu.org">GUIX</a> fully reproducible environment, only at the end of the publication process, )</li>
+<li>🖥️ Provision of computing resources (to be able to run all computations)</li>
+<li>🦊 Full <em>gitlab</em> support (CI/CD, docker, registry, etc.)</li>
+<li>🇫🇷 Switch to a french institutional gitlab forge?</li>
+<li>🛡️ Improve long-term reproducibility stack (<a href="https://www.docker.com/">docker</a> container, <a href="https://guix.gnu.org">GUIX</a> fully reproducible environment, or Containers only at the end of the publication process)</li>
 </ul>
 <p><br></p>
 <section id="how-to-help" class="level3">
@@ -1030,11 +1039,11 @@ Tip
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li>By submitting<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> your work!</li>
+<li>✍️ By submitting<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> your work!</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <ul>
-<li>By becoming reviewer<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></li>
+<li>👀 By becoming reviewer<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></li>
 </ul>
 </div>
 </div>
@@ -1104,7 +1113,7 @@ Tip
 </div>
 <section id="two-fold-reproducibility" class="level2">
 <h2 class="anchored" data-anchor-id="two-fold-reproducibility">Two-fold reproducibility</h2>
-<p>The global scientific workflow of a reproducible process for a Computo may be split in two types of steps:</p>
+<p>The global scientific workflow of a reproducible process for a Computo may be split into two types of steps:</p>
 <p><strong>External and Editorial</strong></p>
 </section>
 <section id="external" class="level2">
@@ -1116,10 +1125,10 @@ Process to obtain (intermediate) results utside of the notebook environment, for
 </dd>
 </dl>
 <ul>
-<li>the process is too long to be conducted in a notebook</li>
-<li>the data to be processed is too big to be handled directly in the notebook</li>
-<li>it needs a specific environment (e.g.&nbsp;a cluster, with gpus, etc.)</li>
-<li>it needs to involve specific languages (e.g.&nbsp;C, C++, Fortran, etc.) or build tools (e.g.&nbsp;make, cmake, etc.)</li>
+<li>🕰️ the process is too long to be conducted in a notebook</li>
+<li>💾 the data to be processed is too big to be handled directly in the notebook</li>
+<li>🖥️ it needs a specific environment (e.g.&nbsp;a cluster, with gpus, etc.)</li>
+<li>🛠️ it needs to involve specific languages (e.g.&nbsp;C, C++, Fortran, etc.) or build tools (e.g.&nbsp;make, cmake, etc.)</li>
 </ul>
 <!-- ## Reproducibility considerations (3)
 
@@ -1166,7 +1175,7 @@ Requirement
 </div>
 <div class="callout-body-container callout-body">
 <p>Not only the intermediate results are provided, but also <strong>the code to transfer it in the notebook environment.</strong></p>
-<p>They are a variety of software solutions to do so.</p>
+<p>There are a variety of software solutions to do so.</p>
 </div>
 </div>
 </section>
@@ -1175,16 +1184,16 @@ Requirement
 <section id="intermediate-results-storage" class="level3">
 <h3 class="anchored" data-anchor-id="intermediate-results-storage">Intermediate results storage</h3>
 <ul>
-<li>Python: <a href="https://joblib.readthedocs.io/en/latest/memory.html"><code>joblib.Memory</code></a>, caching mechanism for python functions, save the results of a function call to disk, and load it back later.</li>
-<li>R : <code>.RData</code> file format, can be loaded back in R with the <code>load()</code> function.</li>
-<li>If results are small enough, storing in a text file (e.g.&nbsp;<code>.csv</code>, <code>.tsv</code>, <code>.json</code>, etc.) is also a solution.</li>
+<li>🐍 Python: <a href="https://joblib.readthedocs.io/en/latest/memory.html"><code>joblib.Memory</code></a>, caching mechanism for python functions, save the results of a function call to disk, and load it back later.</li>
+<li>📦 R : <code>.RData</code> file format, can be loaded back in R with the <code>load()</code> function.</li>
+<li>🗃️ If results are small enough, storing them in a text file (e.g.&nbsp;<code>.csv</code>, <code>.tsv</code>, <code>.json</code>, etc.) is also a solution.</li>
 </ul>
 </section>
 <section id="transfer-of-the-results-to-the-notebook-environment" class="level3">
 <h3 class="anchored" data-anchor-id="transfer-of-the-results-to-the-notebook-environment">Transfer of the results to the notebook environment</h3>
 <ul>
-<li>(<code>.joblib</code> directory or <code>.Rdata</code> file) could be committed to the git repository, and directly loaded in the notebook environment.</li>
-<li>Alternative, centralize input data (when large enough) and intermediate results on a shared scientific provider (we recommend <a href="https://zenodo.org/">Zenodo</a> for this purpose), and download them in the notebook environment.</li>
+<li>📁 (<code>.joblib</code> directory or <code>.Rdata</code> file) could be committed to the git repository, and directly loaded in the notebook environment.</li>
+<li>☁️ Alternative, centralize input data (when large enough) and intermediate results on a shared scientific provider (we recommend <a href="https://zenodo.org/">Zenodo</a> for this purpose), and download them in the notebook environment.</li>
 </ul>
 </section>
 </section>
@@ -1193,26 +1202,22 @@ Requirement
 <h1>Workshop</h1>
 <section id="quarto" class="level2">
 <h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
-<p>In this workshop, we will learn how to use quarto to create a document that includes code, data, and narrative text. We will also learn how to make the CI (continuous integration) working.</p>
+<p>In this workshop, we will learn how to use quarto to create a document that includes code, data, and narrative text. We will also learn how to make the CI (continuous integration) work.</p>
 </section>
 <section id="the-main-pipeline-step-by-step" class="level2">
 <h2 class="anchored" data-anchor-id="the-main-pipeline-step-by-step">The main pipeline, step by step</h2>
 <ul>
-<li>Template installation</li>
-<li>computing environment : renv, conda, etc.</li>
-<li>Authoring in the qmd</li>
-<li>rendering locally</li>
-<li>pushing to github</li>
+<li>🧰 Template installation</li>
+<li>🧪 computing environment: renv, conda, etc.</li>
+<li>✍️ Authoring in the qmd</li>
+<li>🖨️ rendering locally</li>
+<li>🚀 pushing to github</li>
 </ul>
 </section>
 <section id="getting-started" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
 <p>To get started you will need to clone the mock template for this workshop. The template is available at</p>
-<p>https://github.com/computorg/template-jds2024</p>
-</section>
-<section id="mock-repository" class="level2">
-<h2 class="anchored" data-anchor-id="mock-repository">Mock repository</h2>
-<p>https://github.com/computorg/template-jds2024</p>
+<p><a href="https://github.com/computorg/jds2025-workshop-template">https://github.com/computorg/jds2025-workshop-template</a></p>
 </section>
 <section id="creating-a-repo-from-a-template" class="level2">
 <h2 class="anchored" data-anchor-id="creating-a-repo-from-a-template">Creating a repo from a template</h2>
@@ -1220,33 +1225,46 @@ Requirement
 <li>On GitHub.com, navigate to the main page of the repository.</li>
 <li>Above the file list, click Use this template.</li>
 <li>Select Create a new repository.</li>
-<li>Select <code>Include all branches</code>.</li>
 </ol>
 </section>
-<section id="language-version" class="level2">
-<h2 class="anchored" data-anchor-id="language-version">Language version</h2>
+<section id="cloning-the-repository" class="level2">
+<h2 class="anchored" data-anchor-id="cloning-the-repository">Cloning the repository</h2>
 <p>Make a <code>git clone</code> of the repository you just templated and open it in your favorite IDE.</p>
-<div>
+</section>
+<section id="edit-the-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="edit-the-quarto-document">Edit the quarto document</h2>
+<p>Open <code>published-paper-tsne.qmd</code> in your favorite text editor.</p>
+<p>Find the code cells marked as “TODO” and modify them in order to have the plots.</p>
+<p>Look at the scripts in the <code>scripts</code> directory for the plotting code</p>
+</section>
+<section id="rendering-the-document" class="level2">
+<h2 class="anchored" data-anchor-id="rendering-the-document">Rendering the document</h2>
+<p>Try to render the document with quarto, it should produce a pdf and an html document.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="making-the-ci-work" class="level2">
+<h2 class="anchored" data-anchor-id="making-the-ci-work">Making the CI work</h2>
+<p>ONce you’re happy with the result, it’s time to push the changes to GitHub.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"My first article"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will trigger the CI workflow, which will run the tests and render the document.</p>
+</section>
+<section id="checking-the-ci" class="level2">
+<h2 class="anchored" data-anchor-id="checking-the-ci">Checking the CI</h2>
+<p>You can check the CI status by going to the 🏃‍♂️ <strong>“Actions”</strong> tab of your repository on GitHub. You should see a workflow run triggered by your push 🚦.</p>
+</section>
+<section id="a-brief-overview-of-the-ci" class="level2">
+<h2 class="anchored" data-anchor-id="a-brief-overview-of-the-ci">A brief overview of the CI</h2>
+<p><img src="img/workflow.svg" class="img-fluid"></p>
+<p>If everything is 🟢 green, you can go to the 📄 <strong>“Pages”</strong> tab of your repository and see the rendered document 🎉.</p>
+</section>
+<section id="submitting-the-article" class="level2">
+<h2 class="anchored" data-anchor-id="submitting-the-article">Submitting the article</h2>
+<p>Now you can write a nice mail to the Computo board! 📧🎉</p>
 
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<section id="python-version" class="level3 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="python-version">Python version</h3>
-<p>Rename the <code>published-paper-tsne-python.qmd</code> to <code>published-paper-tsne.qmd</code></p>
-</section>
-<section id="r-version" class="level3 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="r-version">R version</h3>
-<p>Rename the <code>published-paper-tsne-R.qmd</code> to <code>published-paper-tsne.qmd</code></p>
-</section>
-</div>
-</div>
-</section>
-</section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
 
-
+</section>
 </section>
 
 
@@ -1264,228 +1282,242 @@ Requirement
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/computorg\.github\.io\/jds2024-workshop\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
         }
       }
+      return false;
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/computorg\.github\.io\/jds2024-workshop\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
         }
-        return container.innerHTML
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -1493,185 +1525,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 
 

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-12-05">
+
+<title>Workshop on Reproducible Research – Computo workshop</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Computo workshop</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Site</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../_slides/index.html"> 
+<span class="menu-text">Slides</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/computorg/jds2025-workshop-template"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#reproducibility-a-tragedy-of-errors" id="toc-reproducibility-a-tragedy-of-errors" class="nav-link active" data-scroll-target="#reproducibility-a-tragedy-of-errors">Reproducibility: A tragedy of errors</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Workshop on Reproducible Research</h1>
+<p class="subtitle lead">A hands-on introduction to quarto with a Computo submission</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Julien Chiquet <a href="mailto:julien.chiquet@inrae.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            INRAE, MIA-Paris
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Pierre Neuvial <a href="mailto:Pierre.Neuvial@math.univ-toulouse.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            CNRS, IMT
+          </p>
+        <p class="affiliation">
+            Université de Toulouse
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Ghislain Durif <a href="mailto:ghislain.durif@ens-lyon.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            CNRS
+          </p>
+        <p class="affiliation">
+            ENS Lyon, LBMC
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Tanguy Lefort <a href="mailto:tanguy.lefort@umontpellier.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Université de Montpellier, IMAG
+          </p>
+        <p class="affiliation">
+            CNRS, Inria, LIRMM
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">François-David Collin <a href="mailto:francois-david.collin@umontpellier.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            CNRS
+          </p>
+        <p class="affiliation">
+            IMAG
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 5, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="reproducibility-a-tragedy-of-errors" class="level1">
+<h1>Reproducibility: A tragedy of errors</h1>
+<p><strong>Authors:</strong> David B. Allison, Andrew W. Brown, Brandon J. George, Kathryn A. Kaiser <strong>Journal:</strong> Nature, 2016, Vol 530, Issue 7588, pp.&nbsp;27-29 <strong>DOI:</strong> <a href="https://doi.org/10.1038/530027a">10.1038/530027a</a></p>
+<p>Mistakes in peer-reviewed papers are easy to find but hard to fix, report David B. Allison and colleagues.</p>
+<hr>
+<p>COMMEN GEO TLOGYDeep-drilling pioneers: what were they drinking? p.33 CONSERVATION Legal loophole allows mango farmers to cull fruit bats in Mauritius p.33 INTERDISCIPLINARITY Can architecture catalyse creativity at the Crick? p.32 EXHIBITION Adolf Fleischmann, pathology sculptor and abstract artist p.30</p>
+<p>Just how error-prone and self-correcting is science? We have spent the past 18 months getting a sense of that. We are a group of researchers working on obesity, nutrition and energetics. In the summer of 2014, one of us (D.B.A.) read a research paper in a well-regarded journal estimating how a change in fastfood consumption would affect children’s weight, and he noted that the analysis applied a mathematical model that overestimated effects by more than tenfold. We and others submitted a letter to the editor explaining the problem. Months later, we were gratified to learn that the authors had elected to retract their paper. In the face of popular articles proclaiming that science is stumbling, this episode was an affirmation that science is self-correcting. Sadly, in our experience, the case is not representative. In the course of assembling weekly lists of articles in our field, we began noticing more peer-reviewed articles containing what we call substantial or invalidating errors. These involve factual mistakes or veer substantially from clearly accepted procedures in ways that, if corrected, might alter a paper’s conclusions. After attempting to address more than 25 of these errors with letters to authors or journals, and identifying at least a dozen more, we had to stop — the work took too much of our time. Our efforts revealed invalidating practices that occur repeatedly (see ‘Three common errors’) and showed how journals and authors react when faced with mistakes that need correction. We learned that post-publication peer review is not consistent, smooth or rapid. Many journal editors and staff members seemed unprepared or ill-equipped to investigate, take action or even respond. Too often, the process spiralled through layers of ineffective e-mails among authors, editors and unidentified journal representatives, often without any public statement added to the original article. Some journals that acknowledged mistakes required a substantial fee to publish our letters: we were asked to spend our research dollars on correcting other people’s errors. As academics who publish, review papers or serve as editors, we appreciate that these issues are complicated. And we feel that journal editors are dedicated and sincere in their efforts. Nevertheless, the scientific community must improve. Science relies essentially but complacently on self-correction, yet scientific publishing raises severe disincentives against such correction. One publisher states that it will charge the author who initiates withdrawal of a published paper US$10,000. Here we summarize our experience, the main barriers we encountered, and our thoughts on how to make published science more rigorous. (Details of other resolved issues are available on request.)</p>
+<p>SIX PROBLEMS Editors are often unable or reluctant to take speedy and appropriate action. For one paper, we obtained raw data deposited online, received institutional approval to reanalyse the data, and submitted a letter to the editor (through the manuscriptsubmission system) describing a need for correction within two weeks. After nine months, we asked the journal why, at minimum, an expression of concern had not been posted. An editor admitted that they had not anticipated the process taking as long as it had. The journal communicated its decision to accept our letter and retract the article 11 months after our submission. The letter and retraction have yet to be published. Where to send expressions of concern is unclear. Journals rarely state whom to contact about potentially invalidating errors. We had to guess whether to send letters to a staff member or editor, formally submit the letter as a manuscript, or contact the authors of a paper directly. On a few occasions, we opted to contact authors when an apparent invalidating error may have merely been an ambiguous description. In unequivocal cases, we usually contacted the journal. Often, journals provided no way to contact editors directly, and editorial staff corresponded without identifying themselves; we were unsure whether editors were involved. Journals that acknowledged invalidating errors were reluctant to issue retractions. In one case, we and others found that a paper had mistakenly argued that a statistical adjustment introduced bias, and we submitted a letter to the editor through the journal’s submission system. An external statistical review subsequently commissioned by the journal confirmed the error. The authors were asked to retract the article, but they refused. The journal ultimately posted the authors’ response to our letter and a summary of commissioned reviewers’ criticism. An accompanying editorial published by the journal stated that “it is each author’s responsibility to make sure that statistical procedures are correctly used and valid for the study submitted”. Journals charge authors to correct others’ mistakes. For one article that we believed contained an invalidating error, our options were to post a comment in an online commenting system or pay a ‘discounted’ submission fee of US$1,716. With another journal from the same publisher, the fee was £1,470 (US$2,100) to publish a letter. Letters from the journal advised that “we are unable to take editorial considerations into account when assessing waiver requests, only the author’s documented ability to pay”. The Committee on Publication Ethics, an independent body that provides advice on how to handle research misconduct, asserts that readers should not have to pay to read retractions. To our knowledge, no authority has discussed whether third parties should be charged to correct errors. No standard mechanism exists to request raw data. When we were able to access data online, we could quickly confirm suspected errors. In at least two cases, we requested data from the authors but received summaries of calculations instead. Sometimes we received no data at all, at which point it was not clear whether journal staff should step in. One journal did retract a paper when its authors refused to show their data or explain discrepancies that we had identified and alerted the journal to in a letter. Working directly with authors can delay correction. After we contacted authors about another paper, they offered to reanalyse the data to address our concerns. After a month with no response, we submitted a letter of concern to the journal. The letter was peer-reviewed and accepted within three weeks. The authors, when made aware of the pending publication of our letter, e-mailed us to state that they would prepare a reply, and we asked the journal not to publish our letter so that we could collaborate with the original authors. That process is ongoing, ten months after we identified the error. Informal expressions of concern are overlooked. Although online platforms such as PubMed Commons offer a convenient way to comment on published papers, they do not include a mediating role for journal editors, and the comments are not incorporated into the literature. Posted concerns are rarely prominent on journals’ websites and are not crossreferenced in any useful way. As a result, readers may assume that a flawed paper is correct, potentially leading to misinformed decisions in science, patient care and public policy. In one case, we chose to post a comment on the journal website and on PubMed Commons after months of private correspondence, in which the authors shared some supplementary data and said that they were preparing a full response. The concerns have been acknowledged but remain unaddressed 15 months after we contacted authors and the journal, and 6 months after we posted our comment (see go.nature.com/fv8tr2).</p>
+<p>WHAT CAN BE DONE? Journals have guidelines for paper submissions and peer review. The Committee on Publication Ethics has outlined recommendations for journals to address problems in areas such as authorship and review. But there is little formal guidance for post-publication corrections. (For our recommendations, see ‘Fixing post-publication peer review’.) Journals, publishers and scientific societies should standardize, streamline and publicize these processes. Authors and journals should share data and code quickly when questions arise. Researchers can aid this process by accessing statistical expertise for experimental design and analysis. Ideally, anyone who detects a potential problem with a study will engage, whether by writing to authors and editors or by commenting online, and will do so in a collegial way. Scientists who engage in post-publication review often do so out of a sense of duty to their community, but this important work does not come with the same prestige as other scientific endeavours. Recognizing and incentivizing such activities could go a long way to cleaning up the literature. Our work was not a systematic search; we simply looked more closely at papers that caught our eye and that we were prepared to assess. We do not know the rate of errors or the motivations behind them (that is, whether they are honest mistakes or a ‘sleight of statistics’). But we showed that a small team of investigators with expertise in statistics and experimental design could find dozens of problematic papers while keeping abreast of the literature. Most were detected simply by reading the paper. A more formal survey would help to determine whether our experiences reflect science in general and whether our recommendations are feasible or effective. Others working to correct the scientific record have encountered similar challenges. Ben Goldacre, a physician and campaigner who is leading COMPare, a project that checks that clinical trials report the outcomes they said they would, told Retraction Watch: “This is a phenomenally laborious process. Not a week goes by that we don’t curse the day we set out to do this.” Robust science needs robust corrections. It is time to make the process less onerous.</p>
+<p>David B. Allison is a distinguished professor in the Department of Biostatistics, School of Public Health, University of Alabama at Birmingham, Alabama, USA. Andrew W. Brown is a scientist in the Office of Energetics and the Nutrition Obesity Research Center, University of Alabama at Birmingham, Alabama, USA. Brandon J. George is a statistician in the Office of Energetics, University of Alabama at Birmingham, Alabama, USA. Kathryn A. Kaiser is an instructor in the Office of Energetics and the Nutrition Obesity Research Center, University of Alabama at Birmingham, Alabama, USA. e-mail: dallison@uab.edu</p>
+<ol type="1">
+<li>Brown, A. W. et al.&nbsp;Child. Obes. 10, 542–545 (2014).</li>
+<li>Li, P. et al.&nbsp;Obes. Facts 8, 127–129 (2015).</li>
+<li>Hauner, H. Obes. Facts 8, 125–126 (2015)</li>
+<li>George, B. J., Brown, A. W. &amp; Allison, D. B. J. Paramedical Sci. 6, 153–154 (2015).</li>
+<li>George, B. J., Goldsby, T. U., Brown, A. W., Li, P. &amp; Allison, D. B. Int. J. Yoga 9, 87–88 (2016).</li>
+<li>Thomas, D. M. et al.&nbsp;World J. Acupunct. Moxibustion 25, 66–67 (2015).</li>
+<li>George, B. J. et al.&nbsp;Obesity (in the press).</li>
+<li>Brown, A. W. et al.&nbsp;Am. J. Clin. Nutr. 102, 241–248 (2015).</li>
+<li>Obesity 23, 2522 (2015). 10.Bland, J. M. &amp; Altman, D. G. Am. J. Clin. Nutr. 102, 991–994 (2015).</li>
+</ol>
+<p>D.B.A. declares competing financial interests: see go.nature.com/hshkkk for details.</p>
+<p>4 FEBRUARY 2016 | VOL 530 | NATURE | 29 COMMENT “Authors and journals should share data and code quickly when questions arise.” © 2016 Macmillan Publishers Limited. All rights reserved</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/computorg\.github\.io\/jds2024-workshop\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

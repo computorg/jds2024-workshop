@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-12-05">
+
+<title>Workshop on Reproducible Research – Computo workshop</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Computo workshop</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Site</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../_slides/index.html"> 
+<span class="menu-text">Slides</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/computorg/jds2025-workshop-template"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#distill-hiatus" id="toc-distill-hiatus" class="nav-link active" data-scroll-target="#distill-hiatus">Distill Hiatus</a>
+  <ul class="collapse">
+  <li><a href="#authors" id="toc-authors" class="nav-link" data-scroll-target="#authors">Authors</a></li>
+  <li><a href="#affiliations" id="toc-affiliations" class="nav-link" data-scroll-target="#affiliations">Affiliations</a></li>
+  <li><a href="#published" id="toc-published" class="nav-link" data-scroll-target="#published">Published</a></li>
+  <li><a href="#doi" id="toc-doi" class="nav-link" data-scroll-target="#doi">DOI</a></li>
+  <li><a href="#changes-in-how-we-think-about-distill" id="toc-changes-in-how-we-think-about-distill" class="nav-link" data-scroll-target="#changes-in-how-we-think-about-distill">Changes in How We Think About Distill</a>
+  <ul class="collapse">
+  <li><a href="#mentorship-is-in-tension-with-being-a-journal" id="toc-mentorship-is-in-tension-with-being-a-journal" class="nav-link" data-scroll-target="#mentorship-is-in-tension-with-being-a-journal">Mentorship is in Tension with Being a Journal</a></li>
+  <li><a href="#editor-articles-are-in-tension-with-being-a-journal" id="toc-editor-articles-are-in-tension-with-being-a-journal" class="nav-link" data-scroll-target="#editor-articles-are-in-tension-with-being-a-journal">Editor Articles are in Tension with Being a Journal</a></li>
+  <li><a href="#neutral-venues-can-be-achieved-in-other-ways" id="toc-neutral-venues-can-be-achieved-in-other-ways" class="nav-link" data-scroll-target="#neutral-venues-can-be-achieved-in-other-ways">Neutral venues can be achieved in other ways</a></li>
+  <li><a href="#self-publication-seems-like-the-future-in-most-cases" id="toc-self-publication-seems-like-the-future-in-most-cases" class="nav-link" data-scroll-target="#self-publication-seems-like-the-future-in-most-cases">Self-Publication Seems Like the Future (in most cases)</a></li>
+  <li><a href="#a-half-hearted-distill-may-cause-harm" id="toc-a-half-hearted-distill-may-cause-harm" class="nav-link" data-scroll-target="#a-half-hearted-distill-may-cause-harm">A Half-hearted Distill May Cause Harm</a></li>
+  </ul></li>
+  <li><a href="#why-a-hiatus" id="toc-why-a-hiatus" class="nav-link" data-scroll-target="#why-a-hiatus">Why a Hiatus?</a>
+  <ul class="collapse">
+  <li><a href="#burnout" id="toc-burnout" class="nav-link" data-scroll-target="#burnout">Burnout</a></li>
+  <li><a href="#author-contributions" id="toc-author-contributions" class="nav-link" data-scroll-target="#author-contributions">Author Contributions</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#updates-and-corrections" id="toc-updates-and-corrections" class="nav-link" data-scroll-target="#updates-and-corrections">Updates and Corrections</a></li>
+  <li><a href="#reuse" id="toc-reuse" class="nav-link" data-scroll-target="#reuse">Reuse</a></li>
+  <li><a href="#citation" id="toc-citation" class="nav-link" data-scroll-target="#citation">Citation</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Workshop on Reproducible Research</h1>
+<p class="subtitle lead">A hands-on introduction to quarto with a Computo submission</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Julien Chiquet <a href="mailto:julien.chiquet@inrae.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            INRAE, MIA-Paris
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Pierre Neuvial <a href="mailto:Pierre.Neuvial@math.univ-toulouse.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            CNRS, IMT
+          </p>
+        <p class="affiliation">
+            Université de Toulouse
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Ghislain Durif <a href="mailto:ghislain.durif@ens-lyon.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            CNRS
+          </p>
+        <p class="affiliation">
+            ENS Lyon, LBMC
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Tanguy Lefort <a href="mailto:tanguy.lefort@umontpellier.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Université de Montpellier, IMAG
+          </p>
+        <p class="affiliation">
+            CNRS, Inria, LIRMM
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">François-David Collin <a href="mailto:francois-david.collin@umontpellier.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            CNRS
+          </p>
+        <p class="affiliation">
+            IMAG
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 5, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="..">Distill</a></p>
+<p><a href="../about/">About</a> <a href="../prize/">Prize</a> <a href="../journal/">Submit</a></p>
+<section id="distill-hiatus" class="level1">
+<h1>Distill Hiatus</h1>
+<section id="authors" class="level3">
+<h3 class="anchored" data-anchor-id="authors">Authors</h3>
+</section>
+<section id="affiliations" class="level3">
+<h3 class="anchored" data-anchor-id="affiliations">Affiliations</h3>
+<p><a href="http://distill.pub">Editorial Team</a></p>
+<p><a href="http://distill.pub">Distill</a></p>
+</section>
+<section id="published" class="level3">
+<h3 class="anchored" data-anchor-id="published">Published</h3>
+<p>July 2, 2021</p>
+</section>
+<section id="doi" class="level3">
+<h3 class="anchored" data-anchor-id="doi">DOI</h3>
+<p><a href="https://doi.org/10.23915/distill.00031">10.23915/distill.00031</a></p>
+<p><em>Over the past five years, Distill has supported authors in publishing artifacts that push beyond the traditional expectations of scientific papers. From Gabriel Goh’s interactive exposition of momentum, to an <a href="https://distill.pub/2020/growing-ca/">ongoing collaboration exploring self-organizing systems</a>, to a <a href="https://distill.pub/2019/advex-bugs-discussion/">community discussion of a highly debated paper</a>, Distill has been a venue for authors to experiment in scientific communication.</em></p>
+<p><em>But over this time, the editorial team has become less certain whether it makes sense to run Distill as a journal, rather than encourage authors to self-publish. Running Distill as a journal creates a great deal of structural friction, making it hard for us to focus on the aspects of scientific publishing we’re most excited about. Distill is volunteer run and these frictions have caused our team to struggle with burnout.</em></p>
+<p><em>Starting today Distill will be taking a one year hiatus, which may be extended indefinitely. Papers actively under review are not affected by this change, published threads can continue to add to their exploration, and we may publish commentary articles in limited cases. Authors can continue to write Distill-style papers using the <a href="https://github.com/distillpub/template">Distill template</a>, and either self-publish or submit to venues like <a href="https://visxai.io/">VISxAI</a>.</em></p>
+<hr>
+<p>The Distill journal was founded as an adapter between traditional and online scientific publishing. We believed that many valuable scientific contributions — such as explanations, interactive articles, and visualizations — were held back by not being seen as “real scientific publications.” Our theory was that if a journal were to publish such artifacts, it would allow authors to benefit from the traditional academic incentive system and enable more of this kind of work.</p>
+<p>After four years, we no longer believe this theory of impact. First, we don’t think that publishing in a journal like Distill significantly affects how seriously most institutions take non-traditional publications. Instead, it seems that more liberal institutions will take high-quality articles seriously regardless of their venue and style, while more conservative institutions remain unmoved. Secondly, we don’t believe that having a venue is the primary bottleneck to authors producing more Distill-style articles. Instead, we believe the primary bottleneck is the amount of effort it takes to produce these articles and the unusual combination of scientific and design expertise required.</p>
+<p>We’re proud of the authors Distill has been able to support and the articles it has been able to publish. And we do think that Distill has produced a lot of value. But we don’t think this value has been a product of Distill’s status as a journal. Instead, we believe Distill’s impact has been through:</p>
+<ul>
+<li>Providing mentorship to authors and potential authors.</li>
+<li>Providing the Distill template (which is used by many non-Distill authors)</li>
+<li>Individuals involved in Distill producing excellent articles.</li>
+<li>Providing encouragement and community to authors.</li>
+</ul>
+<p>Our sense is that Distill’s journal structure may limit, rather than support, these benefits. It creates a great deal of overhead, political concerns, and is in direct tension with some of these goals.</p>
+<p>Instead, we think the future for most types of articles is probably self-publication, either on one-off websites or on a hypothetical “Distill Arxiv.” There are a few exceptions where we think centralized journal-like entities probably have an important enduring role, but we think the majority of papers are best served by self-publication.</p>
+</section>
+<section id="changes-in-how-we-think-about-distill" class="level2">
+<h2 class="anchored" data-anchor-id="changes-in-how-we-think-about-distill">Changes in How We Think About Distill</h2>
+<section id="mentorship-is-in-tension-with-being-a-journal" class="level3">
+<h3 class="anchored" data-anchor-id="mentorship-is-in-tension-with-being-a-journal">Mentorship is in Tension with Being a Journal</h3>
+<p>Behind the scenes, the largest function of Distill is providing feedback and mentorship. For some of our early articles, we provided more than 50 hours of help with designing diagrams, improving writing style, and shaping scientific communication. Although we’ve generally dialed this down over time, each article still requires significant work. All of this is done by our editors in a volunteer capacity, on top of their regular work responsibilities.</p>
+<p>The first problem with providing mentorship through an editorial role is that it’s not a very good mechanism for distributing mentorship. Ideally, one wants to provide mentorship early on in projects, to mentees with similar interests, and to a number of mentees that one is capable of providing good mentorship to. Providing mentorship to everyone who submits an article to Distill is overwhelming. Another problem is that our advice is often too late because the article’s foundation is already set. Finally, many authors don’t realize the amount of effort it takes to publish a Distill article.</p>
+<p>Providing mentorship also creates a challenging dual relationship for an editor. They have both the role of closely supporting and championing the author while also having to accept or reject them in the end. We’ve found this to be difficult for both the mentor and mentee.</p>
+<p>Finally, the kind of deeply-engaged editing and mentorship that we sometimes provide can often amount to an authorship level contribution, with authors offering co-authorship to editors. This is especially true when an editor was a mentor from early on. In many ways, co-authorship would create healthy incentives, rewarding the editor for spending tens of hours improving the article. But it creates a conflict of interest if the editor is to be an independent decision maker, as the journal format suggests they should be. And even if another editor takes over, it’s a political risk: Distill is sometimes criticized for publishing too many articles with editors as authors.</p>
+</section>
+<section id="editor-articles-are-in-tension-with-being-a-journal" class="level3">
+<h3 class="anchored" data-anchor-id="editor-articles-are-in-tension-with-being-a-journal">Editor Articles are in Tension with Being a Journal</h3>
+<p>Another important impact of Distill has been articles written by the editors themselves. Distill’s editorial team consists of volunteer researchers who are deeply excited about explanations and interactive articles and have a long history of doing so. Since the set of people with these interests is small, a non-trivial fraction of Distill’s publications have come from editors. In other cases, authors of existing Distill articles were later invited to become an editor.</p>
+<p>Editor articles are sometimes cited as a sign of a kind of corruption for Distill, that Distill is a vehicle for promoting editors. We can see how it might seem dubious for a journal to publish articles by people running it, even if editorial decisions are made by an editor who is at arms-length. This has led Distill to avoid publishing several editor articles despite believing that they are of value to readers.</p>
+<p>We believe that editor articles are actually a good thing about Distill. Each one represents an immense amount of effort in trying new things scientific publishing. Given the large volume of readers and the positive informal comments we receive, we suspect that for every critic there are many silent but happy readers.</p>
+<p>When a structure turns a public good into an appearance of corruption, it suggests it might not be such a good structure. As editors, we want to share our work with the world in a way that is not seen as corrupt.</p>
+</section>
+<section id="neutral-venues-can-be-achieved-in-other-ways" class="level3">
+<h3 class="anchored" data-anchor-id="neutral-venues-can-be-achieved-in-other-ways">Neutral venues can be achieved in other ways</h3>
+<p>The vast majority of Distill articles are written by multiple authors, often from multiple institutions. As a result, an important function of Distill is providing somewhere to publish that isn’t someone’s home turf. If a Distill article were published on one person or organization’s blog, it could lead to a perception that it is primarily theirs and make other authors feel less comfortable with collaboration. Arxiv normally fills this role, but it only supports PDFs.</p>
+<p>But it turns out there’s a simpler solution: self publication on one-off websites. David Ha and his collaborators have done a great job demonstrating this, using the Distill template and GitHub pages to self-publish articles (eg. the <a href="https://worldmodels.github.io/">world models</a> article). In these cases, the articles are standalone rather than being with a particular author or institution.</p>
+</section>
+<section id="self-publication-seems-like-the-future-in-most-cases" class="level3">
+<h3 class="anchored" data-anchor-id="self-publication-seems-like-the-future-in-most-cases">Self-Publication Seems Like the Future (in most cases)</h3>
+<p>In many areas of physics, self publishing on Arxiv has become the dominant mode of publication. A great deal of machine learning research is also published on Arxiv. We think this type of self-publication is likely the future for a large fraction of publication, possibly along with alternative models of review that are separated from a publisher.</p>
+<p>Journal-led peer review provides many benefits. It can protect against scientific misinformation and non-reproducible results. It can save the research community time by filtering out papers that aren’t worth engaging with. It can provide feedback to junior researchers who may not have other sources of feedback. It can push research groups studying similar topics across institutions to engage with each other’s criticism. And double-blind review may support equity and fairness.</p>
+<p>But is traditional journal-led peer review the most effective way to achieve these benefits? And is it worth the enormous costs it imposes on editors, reviewers, authors, and readers?</p>
+<p>For example, avoiding scientific errors, non-reproducible results, and misinformation is certainly important. But for every paper where there’s a compelling public interest in avoiding misinformation (eg. papers about COVID), there are thousands of papers whose audience is a handful of the same researchers we ask to perform review. Additionally, it’s not clear how effective peer review actually is at catching errors. We suspect that a structure which focuses on reviewing controversial and important papers would be more effective at this goal. Our experience from <a href="https://distill.pub/2019/advex-bugs-discussion/">discussion articles</a> is that reviewers are willing to spend orders of magnitude more energy when they feel like reviewing a paper genuinely matters to the community, rather than being pro-forma, and their work will be seen as a scientific contribution.</p>
+<p>Similarly, we suspect that journal-led review isn’t a very effective way of providing feedback to junior researchers or of promoting equity. These are all very worthy aims, and we’d like to free energy to pursue them in effective ways.</p>
+<p>We also think there’s a lot of upside to self-publication. Self-publication can move very fast. It doesn’t require a paper to fit into the scope of an existing journal. It allows for more innovation in the format of the paper, such as using interactive diagrams as Distill does. And it aligns incentives better.Self-publication may align certain incentives better than traditional publishing. Many papers go through an informal review process before they’re submitted to a journal or self-published, with authors soliciting feedback from colleagues. This informal review process is often smoother, faster, and provides more constructive and more relevant feedback than a traditional review process. Why is that? In a normal review process, the authors have the highest stakes, but little agency in the process. Meanwhile, neither the reviewers nor the editors share the authors’ incentive to move quickly. And the reviewers are often horribly over-subscribed. In contrast, in an informal review process, the authors have a strong incentive to quickly organize the process and reviewers are focused on providing helpful feedback to someone they know, rather than arbitrating a gatekeeping decision.</p>
+</section>
+<section id="a-half-hearted-distill-may-cause-harm" class="level3">
+<h3 class="anchored" data-anchor-id="a-half-hearted-distill-may-cause-harm">A Half-hearted Distill May Cause Harm</h3>
+<p>Distill isn’t living up to our standards of author experience. Originally, we had a vision of a much more engaged, responsive, and rapid review process with editors deeply involved in helping authors improve their article. But the truth is that, with us being quite burnt out, our review process has become much slower and more similar to a typical journal. It’s unclear to us whether the value added by our present review process is worth the time costs we impose on authors.</p>
+<p>Distill also occupies institutional space, potentially discouraging others from starting similar projects. It’s possible that there are others who could execute something like Distill better than us, but aren’t starting their project because Distill exists.</p>
+<p>On the flip side, Distill often comes up in conversations about the future of publishers and journals in machine learning, as a positive example of the role a journal can play. But if we no longer believe in our model, Distill may be unintentionally supporting something we don’t really stand behind. We may also be setting unrealistic aspirations: if Distill’s level of editorial engagement and editing was unsustainable, even with a deeply passionate set of volunteers and a relatively small number of articles, we should at least be clearly communicating how difficult it is.</p>
+</section>
+</section>
+<section id="why-a-hiatus" class="level2">
+<h2 class="anchored" data-anchor-id="why-a-hiatus">Why a Hiatus?</h2>
+<p>We think that Distill is a really beautiful artifact which illustrates a vision of scientific publishing. But it is not sustainable for us to continue running the journal in its current form. We think preserving it in its present state is more valuable than diluting it with lower quality editing. We also think that it’s a lot healthier for us and frees up our energy to do new projects that provide value to the community.</p>
+<p>We’ve considered trying to find others to hand Distill off to. But a lot of the value of Distill is illustrating a weird and idiosyncratic vision. We think there’s value in preserving Distill’s original flavor. We are open to changes to better structure Distill, but we feel protective of Distill’s vision and quirkiness.</p>
+<p>Although Distill is going on hiatus, the <a href="https://github.com/distillpub/template">Distill template</a> is open source, and we’d love to see others run with it!</p>
+<section id="burnout" class="level3">
+<h3 class="anchored" data-anchor-id="burnout">Burnout</h3>
+<p>Over the last few years, Distill has experienced a significant amount of volunteer burnout. The fact that multiple volunteers experienced burnout makes us think it’s partly caused by the issues described in previous sections.</p>
+<p>One of the biggest risk factors in burnout is having conflicting goals, and as the previous sections describe, we’ve had many conflicting goals. We wanted to mentor people, but we also needed to reject them. We wanted to write beautiful articles ourselves, but we also wanted to be an independent venue.</p>
+<p>Another significant risk factor is having unachievable goals. We set extremely high standards for ourselves: with early articles, volunteer editors would often spend 50 or more hours improving articles that were submitted to Distill and bringing them up to the level of quality we aspired to. This invisible effort was comparable to the work of writing a short article of one’s own. It wasn’t sustainable, and this left us with a constant sense that we were falling short. A related issue is that we had trouble setting well-defined boundaries of what we felt we owed to authors who submitted to us.</p>
+<p>By discussing these challenges, we hope that future projects like Distill will be able to learn from our experiences and find ways to balance these competing values.</p>
+</section>
+<section id="author-contributions" class="level3">
+<h3 class="anchored" data-anchor-id="author-contributions">Author Contributions</h3>
+<p>This article was drafted by Chris Olah, Nick Cammarata, Sam Greydanus, and Janelle Tam.</p>
+</section>
+<section id="acknowledgements" class="level3">
+<h3 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h3>
+<p>Distill has been supported by too many people over the years to have any hope of thanking everyone. We’re especially grateful to Distill’s authors for investing so much in their articles, and to our reviewers for generously giving so much time to help Distill. We’re also grateful to the many people who helped us as we struggled with this decision over the last few years. Many people took time to talk with us about burn out, about whether Distill was a good structure, about how to wind Distill down graciously, and about this essay. We’re also grateful to past and present Distill authors for being so understanding of our decision.</p>
+</section>
+<section id="updates-and-corrections" class="level3">
+<h3 class="anchored" data-anchor-id="updates-and-corrections">Updates and Corrections</h3>
+<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/distillpub/post--distill-hiatus/issues/new">create an issue on GitHub</a>.</p>
+</section>
+<section id="reuse" class="level3">
+<h3 class="anchored" data-anchor-id="reuse">Reuse</h3>
+<p>Diagrams and text are licensed under Creative Commons Attribution <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> with the <a href="https://github.com/distillpub/post--distill-hiatus">source available on GitHub</a>, unless noted otherwise. The figures that have been reused from other sources don’t fall under this license and can be recognized by a note in their caption: “Figure from …”.</p>
+</section>
+<section id="citation" class="level3">
+<h3 class="anchored" data-anchor-id="citation">Citation</h3>
+<p>For attribution in academic contexts, please cite this work as</p>
+<pre><code>Team, "Distill Hiatus", Distill, 2021.</code></pre>
+<p>BibTeX citation</p>
+<pre><code>@article{team2021distill,
+  author = {Team, Editorial},
+  title = {Distill Hiatus},
+  journal = {Distill},
+  year = {2021},
+  note = {https://distill.pub/2021/distill-hiatus},
+  doi = {10.23915/distill.00031}
+}</code></pre>
+<p><a href="..">Distill</a> is dedicated to clear explanations of machine learning</p>
+<p><a href="https://distill.pub/about/">About</a> <a href="https://distill.pub/journal/">Submit</a> <a href="https://distill.pub/prize/">Prize</a> <a href="https://distill.pub/archive/">Archive</a> <a href="https://distill.pub/rss.xml">RSS</a> <a href="https://github.com/distillpub">GitHub</a> <a href="https://twitter.com/distillpub">Twitter</a> &nbsp;&nbsp;&nbsp;&nbsp; ISSN 2476-0757</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/computorg\.github\.io\/jds2024-workshop\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
