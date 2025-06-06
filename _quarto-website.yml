@@ -13,7 +13,7 @@ website:
         text: Slides
     right: 
       - icon: github
-        href: https://github.com/computorg/jds2024-workshop-template
+        href: https://github.com/computorg/jds2025-workshop-template
 
 format:
   html:

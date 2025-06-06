@@ -1,17 +1,24 @@
-# Planning
+# Computo workshop
 
--   9h-10h: Introduction to Computo and Quarto
--   10h-10h30: Coffee break/Discussion
--   10h30-11h30: Hands-on with a toy example
--   11h30-12h30: Follow-up and optional personal article submission
+## Planning
+
+### Morning session
+
+-   ⏰ 9h-10h: Introduction to Computo and Quarto
+-   ☕ 10h-10h30: Coffee break/Discussion
+-   🧑‍💻 10h30-12h00: Hands-on with a toy example
+
+### Afternoon session
+
+-   📝 13h30-17h00: Follow-up with personal article submission process
 
 ## Learning objectives
 
--   Understand the benefits of reproducible research
--   Learn how to create a quarto document
--   Learn how to include code, data, and narrative text in a quarto document
--   Learn how to submit a quarto document to Computo
--   How to navigate the Computo submission process (optional)
+-   🎯 Understand the benefits of reproducible research
+-   📄 Learn how to create a quarto document
+-   📝 Learn how to include code, data, and narrative text in a quarto document
+-   📤 Learn how to submit a quarto document to Computo
+-   🧭 How to navigate the Computo submission process (optional)
 
 # Short introduction to Computo and quarto
 
@@ -20,6 +27,10 @@
 ::: columns
 ::: {.column width="60%"}
 Editorial board
+
+<!-- TODO: Mettre à jour le board :
+- Enlever Mathurin et Ghislain
+- Ajouter Aymeric -->
 :::
 
 ::: {.column width="10%"}
@@ -47,7 +58,7 @@ IT support
 
 #### Pierre Neuvial
 
-<small>Statistique, DR CNRS<br/> IMT Toulouse<br/></small>
+<small>Statistics, DR CNRS<br/> IMT Toulouse<br/></small>
 :::
 :::
 
@@ -102,7 +113,7 @@ IT support
 
 #### Chloé Azencott
 
-<small>Machine Learning <br/> CR MinesParisTech</small>
+<small>Machine Learning CR MinesParisTech</small>
 :::
 :::
 
@@ -161,9 +172,9 @@ The pdf era and paper submission.
 
 The reproducibility was not a priority:
 
-- Tools has to be bought, installed, and maintained
-- Data and code were not shared (social engineering
-- Even methodology details are often missing
+- 🛠️ Tools had to be bought, installed, and maintained
+- 🔒 Data and code were not shared (social engineering)
+- ❓ Even methodology details are often missing
 ::::
 
 
@@ -174,7 +185,7 @@ The reproducibility was not a priority:
 :::::
 
 ::: {.notes}
-Social engineering is required to get reproducible results: at best you just have to ask the authors, at worst you have to reverse-engineer everything… and have no guarantee whatsoever to get to the same results, when authors are in a "Après moi, le déluge" mood and ditch, forget or let it crumble once the paper is published.
+Social engineering is required to get reproducible results: at best you just have to ask the authors, at worst you have to reverse-engineer everything… and have no guarantee whatsoever to get to the same results, when authors are in an "Après moi, le déluge" mood and ditch, forget or let it crumble once the paper is published.
 :::
 
 ## Pre-Computo era (2)
@@ -187,9 +198,9 @@ Social engineering is required to get reproducible results: at best you just hav
 And then in the Machine Learning domain, there was [distill.pub](https://distill.pub/2016/misread-tsne/){preview-link="true"} @olah2017research
 
 ::::{.incremental}
-- state-of-the art visualizations
-- paradigm shift in the scientific publication: **“distillation” of complex ideas**
-- 100% reproducible (just a git clone and a few standard commands)
+- 📊 State-of-the-art visualizations
+- 🔄 Paradigm shift in scientific publication: **“distillation” of complex ideas**
+- 💯% reproducible (just a git clone and a few standard commands)
 ::::
 
 :::
@@ -240,8 +251,8 @@ Due to a series of burnouts from the staff
 [distill.pub](https://distill.pub)’s goals were right, but they outpaced themselves in terms of development complexity.
 
 :::{.incremental}
-- **Computo** is a fresh start with a pragmatic approach
-- leverage what the scientific community is already using (Rmarkdown, Jupyter notebooks, etc.)
+- 🚀 **Computo** is a fresh start with a pragmatic approach
+- 🧰 Leverage what the scientific community is already using (Rmarkdown, Jupyter notebooks, etc.)
 :::
 
 
@@ -253,8 +264,8 @@ $\Rightarrow$ *bring the community* to the higher standards
 
 [distill.pub](https://distill.pub)’s goals were right, but they outpaced themselves in terms of development complexity.
 
-- **Computo** is a fresh start with a pragmatic approach
-- leverage what the scientific community is already using (Rmarkdown, Jupyter notebooks, etc.)
+- 🚀 **Computo** is a fresh start with a pragmatic approach
+- 🧰 Leverage what the scientific community is already using (Rmarkdown, Jupyter notebooks, etc.)
 
 :::{ data-id="where-computo-stands" }
 ![](figures/where-computo-stands1.svg)
@@ -265,8 +276,8 @@ $\Rightarrow$ *bring the community* to the higher standards
 
 [distill.pub](https://distill.pub)’s goals were right, but they outpaced themselves in terms of development complexity.
 
-- **Computo** is a fresh start with a pragmatic approach
-- leverage what the scientific community is already using (Rmarkdown, Jupyter notebooks, etc.)
+- 🚀 **Computo** is a fresh start with a pragmatic approach
+- 🧰 Leverage what the scientific community is already using (Rmarkdown, Jupyter notebooks, etc.)
 
 :::{ data-id="where-computo-stands" }
 ![](figures/where-computo-stands2.svg)
@@ -294,8 +305,8 @@ $\Rightarrow$ *bring the community* to the higher standards
 ::: {.callout-tip .fragment}
 ### Point of view
 
--   Need for renewal regarding scientific research implementation
--   Need for higher standards regarding result publications
+-   🔄 Need for renewal regarding scientific research implementation
+-   📈 Need for higher standards regarding result publications
 :::
 ::::
 
@@ -316,11 +327,11 @@ Promote contribution in **statistics** and **machine learning** that provide ins
 
 ::: columns
 ::: {.column width="90%"}
--   ["Diamond" open access](https://en.wikipedia.org/wiki/Open_access#Diamond/platinum_OA) (free to publish and free to read, possible to reuse)
+-   💎 ["Diamond" open access](https://en.wikipedia.org/wiki/Open_access#Diamond/platinum_OA) (free to publish and free to read, possible to reuse)
 -   🅭 🅯 Content published under [CC-BY](https://creativecommons.org/licenses/by/4.0/) license (attribution, share, adapt)
--   Reviews and discussions available after acceptance for publication (anonymous reviews)
+-   📝💬 Reviews and discussions available after acceptance for publication (anonymous reviews)
 
-⇝ In accordance with [Budapest Open Access Initiative (BOAI)](https://www.budapestopenaccessinitiative.org/) and [Plan S](https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/)
+➡️ In accordance with [Budapest Open Access Initiative (BOAI)](https://www.budapestopenaccessinitiative.org/) and [Plan S](https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/)
 :::
 
 ::: {.column width="10%"}
@@ -332,28 +343,27 @@ Promote contribution in **statistics** and **machine learning** that provide ins
 ::: callout-important
 ### Reproducible
 
--   Numerical (statistical) reproducibility is a necessary condition
--   Source code and data should be available, at least partly executed and fully executable
+-   🔢 Numerical (statistical) reproducibility is a necessary condition
+-   💾 Source code and data should be available, at least partly executed and fully executable
 :::
 
 ## Note on reproducible research [@desquilbet2019; @hejblum2020; @the_turing_way2022]
 
 #### Why reproduce scientific results?
-
--   To strengthen their credibility
--   To check for errors (everyone makes errors at some point!!!)
--   To build new research upon them (science is incremental)
+-   💪 To strengthen their credibility
+-   🔍 To check for errors (everyone makes errors at some point!!!)
+-   🧱 To build new research upon them (science is incremental)
 
 #### Issues?
 
--   Reproduce numerical scientific results is often difficult (technology/environment evolution, source code/environment configuration/software partially available or not available)
--   Waste of time and resources to reproduce existing non-reproducible results
+-   🔄 Reproduce numerical scientific results is often difficult (technology/environment evolution, source code/environment configuration/software partially available or not available)
+-   ⏳💸 Waste of time and resources to reproduce existing non-reproducible results
 
 #### Reproducible research?
 
--   For others but also **for your future self**
--   Improve result credibility
--   Facilitate future research works
+-   👥 For others but also **for your future self**
+-   ✅ Improve result credibility
+-   🚀 Facilitate future research works
 
 ## Setup
 
@@ -363,9 +373,9 @@ Official launch at the end of 2021
 
 ### "Economical" model
 
--   A few tenacious people...
--   Free/Open-source community tools (Pandoc, Quarto, Git forge)
--   Institutional support (INRAE, INRIA, CNRS, SFdS)
+-   💪 A few tenacious people...
+-   🛠️ Free/Open-source community tools (Pandoc, Quarto, Git forge)
+-   🏛️ Institutional support (INRAE, INRIA, CNRS, SFdS)
 
 ## Functioning
 
@@ -381,9 +391,9 @@ Environment management, Compilation, Multi-format publication (pdf, html)<br><sm
 
 ### Reviewing system
 
--   Anonymous exchange published after acceptance
--   Reviewer pool (you can join)
--   \[*Ongoing switch from Scholastica to Open review*\]
+-   🕵️ Anonymous exchange published after acceptance
+-   🧑‍⚖️ Reviewer pool (you can join)
+-   🔄 \[*Ongoing switch from Scholastica to Open review*\]
 :::
 
 ::: {.column width="35%"}
@@ -572,7 +582,7 @@ add IJulia
 :::
 :::
 
-<small>Configuration file versionned and used during CI compilation/publication action</small>
+<small>Configuration file versioned and used during CI compilation/publication action</small>
 
 ### Step 3: (re)production
 
@@ -580,7 +590,7 @@ A `git push` command will trigger your article compilation (including computatio
 
 [^2]: or as a *gitlab* page when *gitlab* will be supported (soon)
 
-<small>See the preconfigured `.github/workflows/build.yml` file for the *github* action configuration[^3]</small>
+<small>See the pre-configured `.github/workflows/build.yml` file for the *github* action configuration[^3]</small>
 
 [^3]: and soon the `.gitlab-ci.yml` file for the *gitlab* CI/CD configuration
 
@@ -596,7 +606,7 @@ If the CI process succeeds, both HTML and PDF versions are published on the [*gi
 
 <br/><br/>
 
-#### <s>Scholastica</s> Open review
+#### <s>Scholastica</s> Open review (soon to be replaced by PCI)
 
 <https://openreview.net/group?id=Computo>
 
@@ -617,20 +627,20 @@ Submit:
 
 ::: columns
 ::: {.column width="70%"}
-After a "traditionnal" review process, a 3 step procedure:
+After a "traditional" review process, a 3-step procedure:
 
-1.  Acceptance
-2.  Pre-production
-3.  Publication in Computo (with a DOI)
+1. ✅ Acceptance
+2. 🛠️ Pre-production
+3. 📰 Publication in Computo (with a DOI)
 
 including
 
--   Copy of the author git repository to <https://github.com/computorg/>
--   Final version formatting
--   Review report publication
--   Registration in the journal bibliographic data base
--   Copy of the repository to [Software Heritage](https://archive.softwareheritage.org/browse/search/?q=computorg%2Fpublished&with_visit=true&with_content=true) for archiving
--   Publication of the article on the journal website
+-   📥 Copy of the author git repository to <https://github.com/computorg/>
+-   🖋️ Final version formatting
+-   📝 Review report publication
+-   📚 Registration in the journal bibliographic database
+-   🗄️ Copy of the repository to [Software Heritage](https://archive.softwareheritage.org/browse/search/?q=computorg%2Fpublished&with_visit=true&with_content=true) for archiving
+-   🌐 Publication of the article on the journal website
 :::
 
 ::: {.column width="30%"}
@@ -646,7 +656,7 @@ including
 
 🥲 Fully operational + doi, ISSN
 
-🙂 7 published articles articles, 3 in preproduction, 6 under review (more details [here](https://computo.sfds.asso.fr/publications/))
+🙂 7 published articles, 3 in pre-production, 6 under review (more details [here](https://computo.sfds.asso.fr/publications/))
 
 🙂 x presentations (Montpellier, Toronto, Humastica, Grenoble, RR2023, etc.)
 
@@ -664,39 +674,40 @@ including
 
 ### About several choices
 
--   [`quarto`](https://quarto.org/): dynamic, agnostic language, [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software)[^4], community-based ([`pandoc`](https://pandoc.org/)), Rstudio/Posit support
--   [`github`](https://github.com): dynamic, large user community but not institutional and limited computing resources
+-   [![](img/quarto.png){height="20px"}](https://quarto.org) **Quarto**: dynamic, agnostic language, [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software)[^4], community-based ([`pandoc`](https://pandoc.org/)), Rstudio/Posit support 🚀
+-   [![](img/github-mark.svg){height="20px"}](https://github.com) **GitHub**: dynamic, large user community but not institutional and limited computing resources 🌐
 
 [^4]: "free and open-source"
 
 ### Comparison/inspiration
 
--   [Peer Community-In (PCI)](https://peercommunityin.org/)[^5], [EpiSciences](https://www.episciences.org/): different philosophy and/or functioning
+-   [Peer Community-In (PCI)](https://peercommunityin.org/)[^5], [EpiSciences](https://www.episciences.org/): peer review and publication of articles, but not reproducible by default, but we have just built an official community, stay tuned!
 -   <https://rescience.github.io/>: "remake" published articles
 -   <https://distill.pub> (discontinued): technically more complicated and only ML/AI-oriented
 
-[^5]: Computo is a [PCI-friendly journal](https://peercommunityin.org/pci-friendly-journals/)
+[^5]: Computo is a [PCI-friendly journal](https://peercommunityin.org/pci-friendly-journals/) 
 
 ## Perspectives
 
 <br>
 
--   Provision of computing resources (to be able to run all computations)
--   Full *gitlab* support (CI/CD, docker, registry, etc.)
--   Switch to a french institutional gitlab forge?
--   Improve long-term reproducibility stack ([docker](https://www.docker.com/) container, [GUIX](https://guix.gnu.org) fully reproducible environment, only at the end of the publication process, )
+-   🖥️ Provision of computing resources (to be able to run all computations)
+-   🦊 Full *gitlab* support (CI/CD, docker, registry, etc.)
+-   🇫🇷 Switch to a french institutional gitlab forge?
+-   🛡️ Improve long-term reproducibility stack ([docker](https://www.docker.com/) container, [GUIX](https://guix.gnu.org) fully reproducible environment, or Containers only at the end of the publication process)
 
 <br>
+
 
 ### How to help?
 
 ::: columns
 ::: {.column width="50%"}
--   By submitting[^6] your work!
+-   ✍️ By submitting[^6] your work!
 :::
 
 ::: {.column width="50%"}
--   By becoming reviewer[^7]
+-   👀 By becoming reviewer[^7]
 :::
 :::
 
@@ -732,10 +743,10 @@ The global scientific workflow of a reproducible process for a Computo may be sp
 External
 : Process to obtain (intermediate) results utside of the notebook environment, for a list of reasons (non-exclusive to each other):
 
-- the process is too long to be conducted in a notebook
-- the data to be processed is too big to be handled directly in the notebook
-- it needs a specific environment (e.g. a cluster, with gpus, etc.)
-- it needs to involve specific languages (e.g. C, C++, Fortran, etc.) or build tools (e.g. make, cmake, etc.)
+- 🕰️ the process is too long to be conducted in a notebook
+- 💾 the data to be processed is too big to be handled directly in the notebook
+- 🖥️ it needs a specific environment (e.g. a cluster, with gpus, etc.)
+- 🛠️ it needs to involve specific languages (e.g. C, C++, Fortran, etc.) or build tools (e.g. make, cmake, etc.)
 
 <!-- ## Reproducibility considerations (3)
 
@@ -770,13 +781,13 @@ There are a variety of software solutions to do so.
 ## Examples of data transfer solutions
 
 ### Intermediate results storage
-- Python: [`joblib.Memory`](https://joblib.readthedocs.io/en/latest/memory.html), caching mechanism for python functions, save the results of a function call to disk, and load it back later.
-- R : `.RData` file format, can be loaded back in R with the `load()` function.
-- If results are small enough, storing them in a text file (e.g. `.csv`, `.tsv`, `.json`, etc.) is also a solution.
+- 🐍 Python: [`joblib.Memory`](https://joblib.readthedocs.io/en/latest/memory.html), caching mechanism for python functions, save the results of a function call to disk, and load it back later.
+- 📦 R : `.RData` file format, can be loaded back in R with the `load()` function.
+- 🗃️ If results are small enough, storing them in a text file (e.g. `.csv`, `.tsv`, `.json`, etc.) is also a solution.
 
 ### Transfer of the results to the notebook environment
-- (`.joblib` directory or `.Rdata` file) could be committed to the git repository, and directly loaded in the notebook environment.
-- Alternative, centralize input data (when large enough) and intermediate results on a shared scientific provider (we recommend [Zenodo](https://zenodo.org/) for this purpose), and download them in the notebook environment.
+- 📁 (`.joblib` directory or `.Rdata` file) could be committed to the git repository, and directly loaded in the notebook environment.
+- ☁️ Alternative, centralize input data (when large enough) and intermediate results on a shared scientific provider (we recommend [Zenodo](https://zenodo.org/) for this purpose), and download them in the notebook environment.
 
 # Workshop
 
@@ -786,29 +797,21 @@ In this workshop, we will learn how to use quarto to create a document that incl
 
 ## The main pipeline, step by step
 
--   Template installation
--   computing environment: renv, conda, etc.
--   Authoring in the qmd
--   rendering locally
--   pushing to github
+-   🧰 Template installation
+-   🧪 computing environment: renv, conda, etc.
+-   ✍️ Authoring in the qmd
+-   🖨️ rendering locally
+-   🚀 pushing to github
 
 
 ## Getting started
 
 To get started you will need to clone the mock template for this workshop. The template is available at
 
-[https://github.com/computorg/template-jds2024](https://github.com/computorg/template-jds2024)
+[https://github.com/computorg/jds2025-workshop-template](https://github.com/computorg/jds2025-workshop-template)
 
 :::{ .content-hidden unless-format="revealjs" }
-{{< qrcode https://github.com/computorg/template-jds2024 >}}
-:::
-
-## Mock repository
-
-https://github.com/computorg/template-jds2024
-
-:::{ .content-hidden unless-format="revealjs" }
-{{< qrcode https://github.com/computorg/template-jds2024 >}}
+{{< qrcode https://github.com/computorg/jds2025-workshop-template >}}
 :::
 
 ## Creating a repo from a template
@@ -816,7 +819,6 @@ https://github.com/computorg/template-jds2024
 1. On GitHub.com, navigate to the main page of the repository.
 2. Above the file list, click Use this template.
 3. Select Create a new repository.
-4. Select `Include all branches`.
 
 ## Cloning the repository
 
@@ -826,8 +828,38 @@ Make a `git clone` of the repository you just templated and open it in your favo
 
 Open `published-paper-tsne.qmd` in your favorite text editor.
 
-Find the code cells and modify them in order to have the plots.
+Find the code cells marked as "TODO" and modify them in order to have the plots.
 
 Look at the scripts in the `scripts` directory for the plotting code
-    
-# Conclusion
+
+## Rendering the document
+
+Try to render the document with quarto, it should produce a pdf and an html document.
+```bash
+quarto render
+```
+
+## Making the CI work
+
+ONce you’re happy with the result, it’s time to push the changes to GitHub.
+```bash
+git add .
+git commit -m "My first article"
+git push
+```
+This will trigger the CI workflow, which will run the tests and render the document.
+
+## Checking the CI
+
+You can check the CI status by going to the 🏃‍♂️ **"Actions"** tab of your repository on GitHub. You should see a workflow run triggered by your push 🚦.
+
+## A brief overview of the CI
+
+![](img/workflow.svg)
+
+If everything is 🟢 green, you can go to the 📄 **"Pages"** tab of your repository and see the rendered document 🎉.
+
+## Submitting the article
+
+Now you can write a nice mail to the Computo board! 📧🎉
+
