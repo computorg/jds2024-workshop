@@ -1,19 +1,19 @@
-project: 
+project:
   type: website
-  render: 
+  render:
     - index.qmd
     - github-workflows.qmd
   output-dir: _slides
   resources:
     - "figures/*.svg"
 
-format: 
+format:
   revealjs:
     width: 1240
     height: 700
     self-contained: true
-    scrollable: false
-    theme: [default, ./computo.scss]
+    scrollable: true
+    theme: computo.scss
     slide-number: true
     smaller: true
     title-slide-attributes:
@@ -24,5 +24,5 @@ format:
 
 slide-level: 2
 
-filters: 
+filters:
   - reveal-header

@@ -10,7 +10,7 @@
 
 ### Afternoon session
 
--   📝 13h30-17h00: Follow-up with personal article submission process
+-   📝 13h30-15h00: Follow-up with personal article submission process
 
 ## Learning objectives
 
@@ -26,18 +26,16 @@
 
 ::: columns
 ::: {.column width="60%"}
-Editorial board
-
-<!-- TODO: Mettre à jour le board :
-- Enlever Mathurin et Ghislain
-- Ajouter Aymeric -->
+Chief Editors
+Associate Editors
 :::
 
 ::: {.column width="10%"}
 :::
 
 ::: {.column width="20%"}
-IT support
+Technical Support
+Community Management
 :::
 :::
 
@@ -48,7 +46,7 @@ IT support
 
 #### Julien Chiquet <small>(chief editor)</small>
 
-<small>Stat. learning, DR INRAE<br/> Paris-Saclay University</small>
+<small>Stat. learning for life science<br/> Paris-Saclay University, INRAE</small>
 :::
 :::
 
@@ -56,19 +54,19 @@ IT support
 ::: people
 ![](./people/pierre.jpg){width="120"}
 
-#### Pierre Neuvial
+#### Pierre Neuvial <small>(chief editor)</small>
 
-<small>Statistics, DR CNRS<br/> IMT Toulouse<br/></small>
+<small>Statistics<br/> CNRS, IMT Toulouse</small>
 :::
 :::
 
 ::: {.column width="20%"}
 ::: people
-![](./people/mathurin.jpg){width="120"}
+![](./people/mathieu.jpg){width="120"}
 
-#### Mathurin Massias
+#### Mathieu Carrière
 
-<small>Optim./Machine-Learning<br/> CR INRIA Lyon</small>
+<small>Topological data analysis<br/> Inria, Sophia Antipolis</small>
 :::
 :::
 
@@ -81,7 +79,7 @@ IT support
 
 #### Fra.-Dav. Collin
 
-<small>CS/Stats/ML, IR CNRS<br/> IMAG, Montpellier University</small>
+<small>Research Engineer, IA for Microelectronics<br/> LIRMM, CNRS, Montpellier</small>
 :::
 :::
 :::
@@ -89,11 +87,11 @@ IT support
 ::: columns
 ::: {.column width="20%"}
 ::: people
-![](./people/nelle.jpg){width="120"}
+![](./people/aymeric.jpg){width="120"}
 
-#### Nelle Varoquaux
+#### Aymeric Stamm
 
-<small>Machine learning, CR CNRS<br/> Grenoble Alpes University</small>
+<small>Research Engineer, Statistics<br/> LMJL Nantes, CNRS</small>
 :::
 :::
 
@@ -103,17 +101,17 @@ IT support
 
 #### Marie-Pierre Étienne
 
-<small>Statistics, MCF<br/> Institut Agro Rennes-Angers</small>
+<small>Statistical methods for ecology<br/> ENSAI CREST, Rennes</small>
 :::
 :::
 
 ::: {.column width="20%"}
 ::: people
-![](./people/chloe.jpg){width="120"}
+![](./people/nelle.jpg){width="120"}
 
-#### Chloé Azencott
+#### Nelle Varoquaux
 
-<small>Machine Learning CR MinesParisTech</small>
+<small>ML and causal inference for genomics<br/> CNRS, Grenoble Alpes</small>
 :::
 :::
 
@@ -122,11 +120,11 @@ IT support
 
 ::: {.column width="20%"}
 ::: people
-![](./people/ghislain.jpg){width="120"}
+![](./people/chloe.jpg){width="120"}
 
-#### Ghislain Durif
+#### Chloé Azencott
 
-<small>Stats/ML/dev, IR CNRS<br/> LBMC, ENS LYON</small>
+<small>ML for therapeutic research<br/> Mines ParisTech</small>
 :::
 :::
 :::
@@ -369,7 +367,7 @@ Promote contribution in **statistics** and **machine learning** that provide ins
 
 Official launch at the end of 2021
 
-<center>[![](img/computo_website.png){height="280px"}](https://computo.sfds.asso.fr) [![](img/computo_github-group.png){height="280px"}](https://github.com/computorg/)</center>
+<center>[![](img/computo_website.png){height="280px"}](https://computo-journal.org) [![](img/computo_github-group.png){height="280px"}](https://github.com/computorg/)</center>
 
 ### "Economical" model
 
@@ -393,7 +391,9 @@ Environment management, Compilation, Multi-format publication (pdf, html)<br><sm
 
 -   🕵️ Anonymous exchange published after acceptance
 -   🧑‍⚖️ Reviewer pool (you can join)
--   🔄 \[*Ongoing switch from Scholastica to Open review*\]
+-   🔄 Ongoing migration to *Peer Community In* system
+    -   Former system: OpenReview
+    -   New system: <https://computo-journal.org/> and <https://statml.peercommunityin.org/>
 :::
 
 ::: {.column width="35%"}
@@ -477,11 +477,11 @@ We compute 1+1:
 ::: {.column width="50%"}
 #### Document template
 
-[Git `template` repository](https://computo.sfds.asso.fr/repos/)
+[Git `template` repository](https://computo-journal.org/site/guidelines-authors.html#sec-templates)
 
 with template notebook document + doc + pre-configured compilation and publication setup
 
-[![](img/computo_template_repositories.png)](https://computo.sfds.asso.fr/repos/)
+[![](img/computo_template_repositories.png)](https://computo-journal.org/site/guidelines-authors.html#sec-templates)
 :::
 :::
 
@@ -606,9 +606,12 @@ If the CI process succeeds, both HTML and PDF versions are published on the [*gi
 
 <br/><br/>
 
-#### <s>Scholastica</s> Open review (soon to be replaced by PCI)
+#### Submission system (migrating to PCI)
 
-<https://openreview.net/group?id=Computo>
+The editorial process is migrating from OpenReview to the *Peer Community In* platform:
+
+-   Former platform: <https://openreview.net/group?id=Computo>
+-   New platform: <https://computo-journal.org/> and <https://statml.peercommunityin.org/>
 
 Submit:
 
@@ -656,7 +659,7 @@ including
 
 🥲 Fully operational + doi, ISSN
 
-🙂 7 published articles, 3 in pre-production, 6 under review (more details [here](https://computo.sfds.asso.fr/publications/))
+🙂 7 published articles, 3 in pre-production, 6 under review (more details [here](https://computo-journal.org/publications/))
 
 🙂 x presentations (Montpellier, Toronto, Humastica, Grenoble, RR2023, etc.)
 
@@ -667,6 +670,57 @@ including
 🤔 Institutional support?
 
 🤔 Changing practices in the scientific community?
+
+<br/>
+
+## Partnership with PCI StatML
+
+### 🤝 What is PCI StatML?
+
+**PCI StatML** (<https://statml.peercommunityin.org/>)
+
+-   📝 **Free, community-driven** peer review platform
+-   🎯 Scope: statistics and machine learning
+-   🤝 Computo is a [*PCI-friendly* journal](https://peercommunityin.org/pci-friendly-journals/)
+
+### 🔄 Current Submission Process
+
+**Direct submission to Computo via OpenReview**
+
+1.  Submit via OpenReview (<https://openreview.net/group?id=Computo>)
+2.  Peer review + **reproducibility test** (formatting, code, data)
+3.  Publication in Computo
+
+### 🔮 Future: PCI → Computo Route
+
+Once PCI integration is fully operational:
+
+1.  Submit to PCI StatML
+2.  Peer review (PCI)
+3.  PCI recommendation
+4.  **Reproducibility test** Computo (no additional scientific review)
+5.  Publication in Computo
+
+<br/>
+
+---
+
+## Partnership with PCI StatML (continued)
+
+### 📊 Relative Independence
+
+| | PCI StatML | Computo |
+|---|---|---|
+| **Role** | Peer review platform | Reproducible journal |
+| **Scope** | All Stat/ML domains | **Strong reproducibility focus** |
+| **Outlets** | Multiple journals possible | Computo only |
+
+### 🎯 Current Status
+
+-   ✅ **OpenReview**: currently active for all Computo submissions
+-   🤝 **PCI partnership**: launched, but not yet operational for submissions
+-   ⚠️ **Migration**: PCI platform integration ongoing (details TBD: submission format, HAL deposition, etc.)
+-   🚀 **Future benefit**: accelerated process for PCI-recommended articles (scientific review waived, reproducibility test only)
 
 <br/>
 
@@ -681,11 +735,15 @@ including
 
 ### Comparison/inspiration
 
--   [Peer Community-In (PCI)](https://peercommunityin.org/)[^5], [EpiSciences](https://www.episciences.org/): peer review and publication of articles, but not reproducible by default, but we have just built an official community, stay tuned!
+-   [rOpenSci](https://ropensci.org/) / [pyOpenSci](https://www.pyopensci.org/)[^5]: software peer review for R/Python packages
+    -   📦 **Focus**: package quality, documentation, API design, testing
+    -   🤝 **Complementary to Computo**: rOpenSci reviews *software packages*, Computo publishes *scientific articles* with reproducible computations
+    -   📰 **Blog post**: ["Computo - A Journal for Transparent and Reproducible Research"](https://ropensci.org/blog/2025/11/06/computo-journal-reproducible-research-statistics-machine-learning/)
+-   [EpiSciences](https://www.episciences.org/): peer review and publication, but not reproducible by default
 -   <https://rescience.github.io/>: "remake" published articles
 -   <https://distill.pub> (discontinued): technically more complicated and only ML/AI-oriented
 
-[^5]: Computo is a [PCI-friendly journal](https://peercommunityin.org/pci-friendly-journals/) 
+[^5]: See previous slides for PCI StatML partnership details.
 
 ## Perspectives
 
@@ -711,7 +769,7 @@ including
 :::
 :::
 
-[^6]: <https://computo.sfds.asso.fr/submit/>
+[^6]: <https://computo-journal.org/submit/>
 
 [^7]: contact us at [computo\@sfds.asso.fr](mailto:computo@sfds.asso.fr){.email}
 
@@ -862,4 +920,3 @@ If everything is 🟢 green, you can go to the 📄 **"Pages"** tab of your repo
 ## Submitting the article
 
 Now you can write a nice mail to the Computo board! 📧🎉
-
